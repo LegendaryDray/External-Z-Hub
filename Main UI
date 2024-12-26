@@ -1684,8 +1684,56 @@ CreateGameList("Crystal Clear Obby", true)
 CreateGameList("Obby King", true)
 CreateGameList("Mega Fun Obby", true)
 end
+coroutine.wrap(NDBUQZR_fake_script)()
+local function SWYOYR_fake_script() -- Load.loadscript 
+	local script = Instance.new('LocalScript', Load)
 
-local raw = "https://github.com/LegendaryDray/The-games-for-External-Z-Hub/tree/main"
+	script.Parent.MouseEnter:Connect(function()
+		spawn(function()
+			script.Parent.BackgroundColor3 = Color3.new(1, 1, 1)
+			script.Parent.TextColor3 = Color3.new(0.0862745, 0.0862745, 0.0862745)
+		end)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		spawn(function()
+			game.TweenService:Create(script.Parent, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
+				BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+			}):Play()
+			game.TweenService:Create(script.Parent, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
+				TextColor3 = Color3.fromRGB(181, 181, 181)
+			}):Play()
+		end)
+	end)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+
+		for _, v in next, script.Parent.Parent.Parent.MainUI:GetChildren() do
+			if v:IsA("TextButton") then
+				v.Visible = false
+				
+			end
+			if v:IsA("TextLabel") then
+				v.Visible = false
+	
+			end
+			if v:IsA("ImageButton") then
+				v.Visible = false
+	
+			end
+			if v:IsA("Frame") then
+				v.Visible = false
+	
+			end
+		end
+		
+		spawn(function()
+			for i = 1, 10 do
+				script.Parent.Parent.Parent.MainUI.BackgroundTransparency = script.Parent.Parent.Parent.MainUI.BackgroundTransparency + 0.1
+				task.wait()
+				end
+			end)
+		local raw = "https://raw.githubusercontent.com/StupidProAArsenal/UniqueHub/main/UniqueHubv2Intro"
 
 		loadstring(game:HttpGet(raw, true))()
 
@@ -1802,7 +1850,7 @@ local function RDPP_fake_script() -- copylink.copy
 	script.Parent.MouseButton1Click:Connect(function()
 		if shadow.Visible == false then
 			pcall(function()
-				setclipboard("discord.gg/aXmrXQH8AF")
+				setclipboard("https://forum.robloxscripts.com/")
 			end)
 			shadow.Visible = true
 			spawn(function()
@@ -2011,3 +2059,4 @@ local function YXLQIIB_fake_script() -- uniqueHubv2intro.FullIntroHandler
 	end
 	
 end
+coroutine.wrap(YXLQIIB_fake_script)()
