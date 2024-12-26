@@ -119,7 +119,7 @@ ExHub.Visible = false
 ExHub.ZIndex = 2
 
 UICorner_5.CornerRadius = UDim.new(0, 12)
-UICorner_5.Parent = Shadow
+UICorner_5.Parent = ExHub
 
 UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(221, 221, 221)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient_4.Rotation = 80
@@ -175,7 +175,7 @@ ExHub.Visible = false
 ExHub.ZIndex = 2
 
 UICorner_5.CornerRadius = UDim.new(0, 12)
-UICorner_5.Parent = Shadow
+UICorner_5.Parent = ExHub
 
 UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(221, 221, 221)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient_4.Rotation = 80
@@ -444,26 +444,26 @@ UIGradient_16.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.f
 UIGradient_16.Rotation = 80
 UIGradient_16.Parent = copylink
 
-jointheforum.Name = "jointheforum"
-jointheforum.Parent = MainUI
-jointheforum.AnchorPoint = Vector2.new(0.5, 0.5)
-jointheforum.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-jointheforum.BackgroundTransparency = 1.000
-jointheforum.BorderSizePixel = 0
-jointheforum.Position = UDim2.new(0.500307202, 0, 1.05345571, 0)
-jointheforum.Size = UDim2.new(0, 277, 0, 19)
-jointheforum.Font = Enum.Font.FredokaOne
-jointheforum.Text = "Join The Forum"
-jointheforum.TextColor3 = Color3.fromRGB(255, 255, 255)
-jointheforum.TextScaled = true
-jointheforum.TextSize = 14.000
-jointheforum.TextWrapped = true
+jointhediscord.Name = "jointhediscord"
+jointhediscord.Parent = MainUI
+jointhediscord.AnchorPoint = Vector2.new(0.5, 0.5)
+jointhediscord.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+jointhediscord.BackgroundTransparency = 1.000
+jointhediscord.BorderSizePixel = 0
+jointhediscord.Position = UDim2.new(0.500307202, 0, 1.05345571, 0)
+jointhediscord.Size = UDim2.new(0, 277, 0, 19)
+jointhediscord.Font = Enum.Font.FredokaOne
+jointhediscord.Text = "Join The Discord"
+jointhediscord.TextColor3 = Color3.fromRGB(255, 255, 255)
+jointhediscord.TextScaled = true
+jointhediscord.TextSize = 14.000
+jointhediscord.TextWrapped = true
 
-UICorner_18.Parent = jointheforum
+UICorner_18.Parent = jointhediscord
 
 UIGradient_17.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(221, 221, 221)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient_17.Rotation = 80
-UIGradient_17.Parent = jointheforum
+UIGradient_17.Parent = jointhediscord
 
 CopiedFrame.Name = "CopiedFrame"
 CopiedFrame.Parent = MainUI
@@ -524,7 +524,7 @@ UIGradient_20.Rotation = 80
 UIGradient_20.Parent = CopiedFrame
 
 IntroImage.Name = "IntroImage"
-IntroImage.Parent = uniqueHubv2intro
+IntroImage.Parent = externalzhub
 IntroImage.AnchorPoint = Vector2.new(0.5, 0.5)
 IntroImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 IntroImage.BackgroundTransparency = 1.000
@@ -550,7 +550,7 @@ introtitle.Size = UDim2.new(0, 198, 0, 22)
 introtitle.Visible = false
 introtitle.Font = Enum.Font.FredokaOne
 introtitle.RichText = true
-introtitle.Text = "Unique Hub <b>V2</b>"
+introtitle.Text = "External Z Hub <b>V2</b>"
 introtitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 introtitle.TextScaled = true
 introtitle.TextSize = 14.000
@@ -689,7 +689,7 @@ local function NMGDR_fake_script() -- done.probuttondone
 		end)
 	end)
 	
-	local shadow = script.Parent.Parent.Parent.Shadow
+	local exhub = script.Parent.Parent.Parent.exhub
 	local gameslist = script.Parent.Parent.Parent.GamesList
 	
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1120,9 +1120,9 @@ local function RDPP_fake_script() -- copylink.copy
 	script.Parent.MouseButton1Click:Connect(function()
 		if shadow.Visible == false then
 			pcall(function()
-				setclipboard("https://forum.robloxscripts.com/")
+				setclipboard("https://discord.gg/aXmrXQH8AF")
 			end)
-			shadow.Visible = true
+			exhub.Visible = true
 			spawn(function()
 			main.Visible = true
 			main:TweenSize(UDim2.new(0, 245,0, 84), "InOut", "Quint", 0.7)
@@ -1173,9 +1173,9 @@ local function NCOPETE_fake_script() -- okay.probuttonokay
 		end
 	end
 	script.Parent.MouseButton1Click:Connect(function()
-		if shadow.Visible == true then
+		if exhub.Visible == true then
 			
-			shadow.Visible = false
+			exhub.Visible = false
 			spawn(function()
 				for i,v in pairs(main:GetChildren()) do
 					if v:IsA("TextButton") then
