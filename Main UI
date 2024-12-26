@@ -207,6 +207,9 @@ local myFrame = script.Parent.MainFrame
 myFrame.Interactable = true
 local draggableObject = Draggable.new(myFrame)
 
+}
+-----------------------------------------------
+
 	ExHub.ExHub.Name = "ExHub"
 	ExHub.ExHub.Parent = game.CoreGui
 
