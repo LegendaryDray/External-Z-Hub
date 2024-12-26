@@ -201,46 +201,56 @@ local ExHub = {
 -----------------------------------------------
 -- Properties
 
-local mainFrame = ExHub.MainFrame
+local mainFrame = script.Parent -- Assuming this script is placed directly under MainFrame in the hierarchy
 local dragging = false
-local dragInput
-local mousePos
-local offset
+local dragInput, dragStart, startPos
 
+-- Function to start dragging
 local function onDragStart(input)
-    dragging = true
-    offset = input.Position - mainFrame.Position
-    dragInput = input
-end
-
-local function onDrag(input)
-    if dragging then
-        mousePos = input.Position - offset
-        local clampedX = math.clamp(mousePos.X, 0, game:GetService("Workspace").CurrentCamera.ViewportSize.X - mainFrame.Size.X.Offset)
-        local clampedY = math.clamp(mousePos.Y, 0, game:GetService("Workspace").CurrentCamera.ViewportSize.Y - mainFrame.Size.Y.Offset)
-        mainFrame.Position = UDim2.new(0, clampedX, 0, clampedY)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragging = true
+        dragStart = input.Position
+        startPos = mainFrame.Position
+        input.Consumed = true
     end
 end
 
-local function onDragEnd()
-    dragging = false
+-- Function to update the drag position
+local function onDragMove(input)
+    if dragging then
+        local delta = input.Position - dragStart
+        mainFrame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+    end
 end
 
+-- Function to stop dragging
+local function onDragEnd(input)
+    if dragging then
+        dragging = false
+    end
+end
+
+-- Connect to InputBegan, InputChanged, and InputEnded
+mainFrame.InputBegan:Connect(onDragStart)
+mainFrame.InputChanged:Connect(onDragMove)
+mainFrame.InputEnded:Connect(onDragEnd)
+
+-- For mobile devices, the touch input is used for dragging
 mainFrame.InputBegan:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+    if input.UserInputType == Enum.UserInputType.Touch then
         onDragStart(input)
     end
 end)
 
 mainFrame.InputChanged:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-        onDrag(input)
+    if input.UserInputType == Enum.UserInputType.Touch then
+        onDragMove(input)
     end
 end)
 
 mainFrame.InputEnded:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-        onDragEnd()
+    if input.UserInputType == Enum.UserInputType.Touch then
+        onDragEnd(input)
     end
 end)
 
