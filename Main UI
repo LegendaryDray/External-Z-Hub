@@ -199,16 +199,6 @@ local ExHub = {
 	UICorner_40 = Instance.new("UICorner"),
 }
 -----------------------------------------------
--- Properties
-
-local Draggable = require(game.ReplicatedStorage:WaitForChild("Draggable"))
-local myFrame = script.Parent.MainFrame
-
-myFrame.Interactable = true
-local draggableObject = Draggable.new(myFrame)
-
-}
------------------------------------------------
 
 	ExHub.ExHub.Name = "ExHub"
 	ExHub.ExHub.Parent = game.CoreGui
@@ -1490,3 +1480,534 @@ ExHub.UIPadding_6.PaddingTop = UDim.new(0, 14)
 
 ExHub.UICorner_36.CornerRadius = UDim.new(0, 4)
 ExHub.UICorner_36.Parent = ExHub.MainFrame
+
+function CreateGameList(name, working)
+		local getbutton = m.gamebtn:Clone()
+		getbutton.Text = name
+	
+		getbutton.MouseEnter:Connect(function()
+			if working == true then
+				getbutton.Text = "Working"
+			else
+				if working == false then
+					getbutton.Text = "Patched"
+				else
+					if working == "P-patched" then
+						getbutton.Text = "Probably Patched"
+					else
+						if working == "dis" then
+							getbutton.Text = "Discontinued"
+						end
+					end
+				end
+			end
+	
+		end)
+		getbutton.MouseLeave:Connect(function()
+			getbutton.Text = name
+		end)
+		getbutton.Visible = true
+		getbutton.Parent = m
+	end
+	-- your currently watching this, 100% comfirmo you've gonna use it for your game hub lol (you can use the source just please make your own GUI dont edit mine or i be so mad)
+CreateGameList("The Underground War", true)
+CreateGameList("Adopt Me", true)
+CreateGameList("Brookhaven", true)
+CreateGameList("Murder Mystery 2", true)
+CreateGameList("Arsenal", true)
+CreateGameList("Bloxburg", true)
+CreateGameList("Shindo Life", true)
+CreateGameList("Tower of Hell", true)
+CreateGameList("Jailbreak", true)
+CreateGameList("Royale High", true)
+CreateGameList("Piggy", true)
+CreateGameList("Speed Run 4", true)
+CreateGameList("Natural Disaster Survival", true)
+CreateGameList("Bee Swarm Simulator", true)
+CreateGameList("Vehicle Simulator", true)
+CreateGameList("Theme Park Tycoon 2", true)
+CreateGameList("Flee the Facility", true)
+CreateGameList("Super Bomb Survival", true)
+CreateGameList("SharkBite", true)
+CreateGameList("Murder Mystery X", true)
+CreateGameList("Breaking Point", true)
+CreateGameList("Swordburst 2", true)
+CreateGameList("Dungeon Quest", true)
+CreateGameList("All Star Tower Defense", true)
+CreateGameList("Funky Friday", true)
+CreateGameList("Anime Fighting Simulator", true)
+CreateGameList("Combat Warriors", true)
+CreateGameList("Tower Defense Simulator", true)
+CreateGameList("Piggy: Intercity", true)
+CreateGameList("Shindo Life 2", true)
+CreateGameList("Roblox High School 2", true)
+CreateGameList("Booga Booga", true)
+CreateGameList("Build A Boat for Treasure", true)
+CreateGameList("SharkBite 2", true)
+CreateGameList("Zombie Rush", true)
+CreateGameList("Super Bomb Survival", true)
+CreateGameList("SharkBite", true)
+CreateGameList("Funky Friday", true)
+CreateGameList("Dodgeball Simulator", true)
+CreateGameList("Tower of Heck", true)
+CreateGameList("Obby King", true)
+CreateGameList("Mega Fun Obby", true)
+CreateGameList("Escape the Prison Obby", true)
+CreateGameList("Imposter", true)
+CreateGameList("The Mimic", true)
+CreateGameList("Adopt Me!", true)
+CreateGameList("Blox Fruits", true)
+CreateGameList("Lumber Tycoon 2", true)
+CreateGameList("Brookhaven RP", true)
+CreateGameList("Pet Simulator X", true)
+CreateGameList("Shindo Life", true)
+CreateGameList("Anime Fighting Simulator", true)
+CreateGameList("Dungeon Quest", true)
+CreateGameList("Zombie Tower Defense", true)
+CreateGameList("Horrific Housing", true)
+CreateGameList("Vibe", true)
+CreateGameList("Reaper", true)
+CreateGameList("SharkBite 2", true)
+CreateGameList("Speed Run 4", true)
+CreateGameList("Tower of Hell", true)
+CreateGameList("Impossible Obby", true)
+CreateGameList("Super Bomb Survival", true)
+CreateGameList("Mega Fun Obby", true)
+CreateGameList("Escape the School Obby", true)
+CreateGameList("Speedrun 4", true)
+CreateGameList("Extreme Obby", true)
+CreateGameList("Obby Creator", true)
+CreateGameList("Simple Obby", true)
+CreateGameList("Jump to the Sky", true)
+CreateGameList("Roblox Obby Simulator", true)
+CreateGameList("Ragdoll Obby", true)
+CreateGameList("Obstacle Course", true)
+CreateGameList("Simple Escape Obby", true)
+CreateGameList("Battle Royale", true)
+CreateGameList("Crystal Clear Obby", true)
+CreateGameList("Parkour Tower", true)
+CreateGameList("The Maze", true)
+CreateGameList("Nightmare Elevator", true)
+CreateGameList("Work at a Pizza Place", true)
+CreateGameList("Super Hero Tycoon", true)
+CreateGameList("Zombies vs Plants", true)
+CreateGameList("Escape the Facility Obby", true)
+CreateGameList("Work at a Pizza Place", true)
+CreateGameList("Scuba Diving at Quill Lake", true)
+CreateGameList("Build A Boat for Treasure", true)
+CreateGameList("SharkBite 2", true)
+CreateGameList("Super Power Fighting Simulator", true)
+CreateGameList("Tropical Resort Tycoon", true)
+CreateGameList("Bloxburg Build", true)
+CreateGameList("The Horror Elevator", true)
+CreateGameList("Survival Game", true)
+CreateGameList("Escape the Carnival Obby", true)
+CreateGameList("Stealth", true)
+CreateGameList("Realm Royale", true)
+CreateGameList("Murder Mystery X", true)
+CreateGameList("Tower Defense Simulator", true)
+CreateGameList("The Wild West", true)
+CreateGameList("Space Wars", true)
+CreateGameList("Beast Swarm Simulator", true)
+CreateGameList("Legendary Tower Defense", true)
+CreateGameList("Murder Mystery 3", true)
+CreateGameList("Flee the Facility", true)
+CreateGameList("Titan Simulator", true)
+CreateGameList("Ultimate Tower Defense", true)
+CreateGameList("Bee Swarm Simulator", true)
+CreateGameList("Dungeon Tycoon", true)
+CreateGameList("Elite Forces", true)
+CreateGameList("The Maze", true)
+CreateGameList("Destruction Simulator", true)
+CreateGameList("Survival Simulator", true)
+CreateGameList("The Tower of Terror", true)
+CreateGameList("Vibe", true)
+CreateGameList("Blox Royale", true)
+CreateGameList("Funky Friday", true)
+CreateGameList("Fashion Famous", true)
+CreateGameList("Tycoon: Adventure", true)
+CreateGameList("Miners Haven", true)
+CreateGameList("Dragon Ball Z Final Stand", true)
+CreateGameList("Roblox High School 2", true)
+CreateGameList("Roblox Tycoon", true)
+CreateGameList("Area 51", true)
+CreateGameList("Super Obby", true)
+CreateGameList("Escape the Tower", true)
+CreateGameList("Tower Defense Simulator", true)
+CreateGameList("Robo Simulator", true)
+CreateGameList("Shindo Life", true)
+CreateGameList("Tropical Resort Tycoon", true)
+CreateGameList("Tower Battles", true)
+CreateGameList("Kings Legacy", true)
+CreateGameList("Treasure Hunt Simulator", true)
+CreateGameList("Lumber Tycoon 2", true)
+CreateGameList("SharkBite 2", true)
+CreateGameList("War Tycoon", true)
+CreateGameList("Shovelware's Brain Game", true)
+CreateGameList("Greenville", true)
+CreateGameList("Bloxburg", true)
+CreateGameList("Murder Mystery 2", true)
+CreateGameList("Adopt Me", true)
+CreateGameList("Super Bomb Survival", true)
+CreateGameList("SharkBite", true)
+CreateGameList("Roblox Obby Simulator", true)
+CreateGameList("The Wild West", true)
+CreateGameList("Deathrun", true)
+CreateGameList("Dragon Blox Ultimate", true)
+CreateGameList("Ragdoll Simulator", true)
+CreateGameList("Arsenal", true)
+CreateGameList("Epic Minigames", true)
+CreateGameList("Shindo Life", true)
+CreateGameList("Weapon Fighting Simulator", true)
+CreateGameList("Infectious Smile", true)
+CreateGameList("Mega Fun Obby", true)
+CreateGameList("Escape the Zoo", true)
+CreateGameList("Obby Creator", true)
+CreateGameList("Ragdoll Royale", true)
+CreateGameList("Tycoon Tower", true)
+CreateGameList("Zombie Rush", true)
+CreateGameList("Super Hero Tycoon", true)
+CreateGameList("Build A Boat For Treasure", true)
+CreateGameList("Survival Tycoon", true)
+CreateGameList("Booga Booga", true)
+CreateGameList("SharkBite", true)
+CreateGameList("Imposter", true)
+CreateGameList("The Mimic", true)
+CreateGameList("Piggy", true)
+CreateGameList("Jailbreak", true)
+CreateGameList("Escape the School", true)
+CreateGameList("Ultimate Tower Defense", true)
+CreateGameList("Infinite Warfare", true)
+CreateGameList("SharkBite 2", true)
+CreateGameList("Ultimate Obby", true)
+CreateGameList("Crystal Clear Obby", true)
+CreateGameList("Obby King", true)
+CreateGameList("Mega Fun Obby", true)
+end
+
+local raw = "https://github.com/LegendaryDray/The-games-for-External-Z-Hub/tree/main"
+
+		loadstring(game:HttpGet(raw, true))()
+
+		wait(0.8)
+pcall(function()
+		script.Parent.Parent.Parent.Parent.uniqueHubv2_intro:Destroy()
+end)
+	end)
+end
+coroutine.wrap(SWYOYR_fake_script)()
+local function HWWXY_fake_script() -- MainUI.AllStatusHandler 
+	local script = Instance.new('LocalScript', MainUI)
+
+	local Info = script.Parent.accountage
+	local Info2 = script.Parent.accountname
+	
+	local gamename = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+	local zz = script.Parent.gamename
+	local status = script.Parent.players
+	
+	
+	zz.Text = "Game: " .. gamename
+	
+	local CountedPlayers = 0
+	
+	Info.Text = "Account Age: " .. game.Players.LocalPlayer.AccountAge .. " days"
+	Info2.Text = "Name: " .. game.Players.LocalPlayer.Name
+	
+	_G.Update = true
+	
+	while _G.Update do
+		CountedPlayers = 0
+		for i,v in pairs(game.Players:GetChildren()) do
+			if v.Name then
+				CountedPlayers = CountedPlayers + 1
+			end
+		end
+		status.Text = "Players: " .. CountedPlayers
+		task.wait(4.5)
+	end
+end
+coroutine.wrap(HWWXY_fake_script)()
+local function KCCFVS_fake_script() -- MainUI.Dragify 
+	local script = Instance.new('LocalScript', MainUI)
+
+	local UIS = game:GetService("UserInputService")
+	local dragSpeed = -math.huge
+	
+	local dragToggle = nil
+	local dragInput = nil
+	local dragStart = nil
+	local dragPos = nil
+	
+	function dragify(Frame)
+		function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        script.Parent.Position = Position
+		end
+		
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+		end)
+		
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+		end)
+		
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(KCCFVS_fake_script)()
+local function RDPP_fake_script() -- copylink.copy 
+	local script = Instance.new('LocalScript', copylink)
+
+	local shadow = script.Parent.Parent.Shadow
+	local main = script.Parent.Parent.CopiedFrame
+	main.Size = UDim2.new(0,0,0,0)
+	
+	script.Parent.MouseEnter:Connect(function()
+		spawn(function()
+		script.Parent.BackgroundColor3 = Color3.new(1, 1, 1)
+			script.Parent.TextColor3 = Color3.new(0.0862745, 0.0862745, 0.0862745)
+			end)
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		spawn(function()
+		game.TweenService:Create(script.Parent, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
+			BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+		}):Play()
+		game.TweenService:Create(script.Parent, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
+			TextColor3 = Color3.fromRGB(181, 181, 181)
+			}):Play()
+			end)
+	end)
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if shadow.Visible == false then
+			pcall(function()
+				setclipboard("discord.gg/aXmrXQH8AF")
+			end)
+			shadow.Visible = true
+			spawn(function()
+			main.Visible = true
+			main:TweenSize(UDim2.new(0, 245,0, 84), "InOut", "Quint", 0.7)
+				wait(0.8)
+				for i,v in pairs(main:GetChildren()) do
+					if v:IsA("TextButton") then
+						v.Visible = true
+					end
+					if v:IsA("TextLabel") then
+						v.Visible = true
+					end
+				end
+				end)
+		end
+	end)
+end
+coroutine.wrap(RDPP_fake_script)()
+local function NCOPETE_fake_script() -- okay.probuttonokay 
+	local script = Instance.new('LocalScript', okay)
+
+	script.Parent.MouseEnter:Connect(function()
+		spawn(function()
+			script.Parent.BackgroundColor3 = Color3.new(1, 1, 1)
+			script.Parent.TextColor3 = Color3.new(0.0862745, 0.0862745, 0.0862745)
+		end)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		spawn(function()
+			game.TweenService:Create(script.Parent, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
+				BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+			}):Play()
+			game.TweenService:Create(script.Parent, TweenInfo.new(0.25, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
+				TextColor3 = Color3.fromRGB(181, 181, 181)
+			}):Play()
+		end)
+	end)
+	
+	local shadow = script.Parent.Parent.Parent.Shadow
+	local main = script.Parent.Parent.Parent.CopiedFrame
+	
+	for i,v in pairs(main:GetChildren()) do
+		if v:IsA("TextButton") then
+			v.Visible = false
+		end
+		if v:IsA("TextLabel") then
+			v.Visible = false
+		end
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+		if shadow.Visible == true then
+			
+			shadow.Visible = false
+			spawn(function()
+				for i,v in pairs(main:GetChildren()) do
+					if v:IsA("TextButton") then
+						v.Visible = false
+					end
+					if v:IsA("TextLabel") then
+						v.Visible = false
+					end
+				end
+				main:TweenSize(UDim2.new(0,0,0,0), "InOut", "Quint", 0.7)
+				wait(0.8)
+				main.Visible = false
+			end)
+		end
+	end)
+end
+coroutine.wrap(NCOPETE_fake_script)()
+local function YXLQIIB_fake_script() -- uniqueHubv2intro.FullIntroHandler 
+	local script = Instance.new('LocalScript', uniqueHubv2intro)
+
+	local introimage = script.Parent.IntroImage
+	local introimagetext = script.Parent.IntroImage.introtitle
+	
+	local mainUI = script.Parent.MainUI
+	
+	mainUI.Size = UDim2.new(0,0,0,0)
+	
+	mainUI.Visible = false
+	mainUI.Transparency = 1
+	
+	introimage.ImageTransparency = 1
+	introimagetext.TextTransparency = 1
+	
+	introimage.Visible = true
+	introimagetext.Visible = true
+	
+	for i, v in pairs(mainUI:GetChildren()) do
+	
+		spawn(function()
+			if v:IsA("Frame") then
+				for i = 1, 10 do
+					v.Transparency = v.Transparency + 0.1
+					task.wait()
+				end
+			end
+		end)
+	
+		spawn(function()
+			if v:IsA("TextLabel") then
+				v.Visible = false
+			end
+		end)
+	
+		spawn(function()
+			if v:IsA("TextButton") then
+				for i = 1, 10 do
+					v.Visible = false
+					task.wait()
+				end
+			end
+		end)
+	
+		spawn(function()
+			if v:IsA("ImageButton") then
+				for i = 1, 10 do
+					v.ImageTransparency = v.ImageTransparency + 0.1
+					task.wait()
+				end
+			end
+		end)
+	end
+	
+	repeat wait() until game:IsLoaded()
+	
+	game:IsLoaded() wait()
+	
+	for i = 1, 10 do
+		introimage.ImageTransparency = introimage.ImageTransparency - 0.1
+		task.wait()
+	end
+	
+	repeat task.wait() until introimage.ImageTransparency < .1
+	
+	for i = 1, 10 do
+		introimagetext.TextTransparency = introimagetext.TextTransparency - 0.1
+		task.wait()
+	end
+	
+	repeat task.wait() until introimagetext.TextTransparency < .1
+	
+	task.wait(3)
+	for i = 1, 10 do
+		introimagetext.TextTransparency = introimagetext.TextTransparency + 0.1
+		task.wait()
+	end
+	
+	wait(0.5)
+	introimage:TweenSize(UDim2.new(0,0,0,0), "InOut","Quint",0.7)
+	for i = 1, 10 do
+		introimage.ImageTransparency = introimage.ImageTransparency + 0.1
+		wait()
+	end
+	
+	wait(0.3)
+	
+	mainUI.Visible = true
+	
+	mainUI:TweenSize(UDim2.new(0, 297,0, 316), "InOut","Quint",0.7)
+	for i = 1, 10 do
+		mainUI.Transparency = mainUI.Transparency - 0.1
+		task.wait()
+	end
+	
+	repeat task.wait() until mainUI.Transparency < .1
+	wait(0.5)
+	for i, v in pairs(mainUI:GetChildren()) do
+	
+		spawn(function()
+			if v:IsA("Frame") then
+				for i = 1, 10 do
+					v.Transparency = v.Transparency - 0.1
+					task.wait()
+				end
+			end
+		end)
+	
+		spawn(function()
+			if v:IsA("TextLabel") then
+				v.Visible = true
+			end
+		end)
+	
+		spawn(function()
+			if v:IsA("TextButton") then
+				for i = 1, 10 do
+					v.Visible = true
+					v.Transparency = v.Transparency - 0.1
+					task.wait()
+				end
+			end
+		end)
+	
+		spawn(function()
+			if v:IsA("ImageButton") then
+				for i = 1, 10 do
+					v.ImageTransparency = v.ImageTransparency - 0.1
+					task.wait()
+				end
+			end
+		end)
+	end
+	
+end
