@@ -231,7 +231,7 @@ mainFrame.InputChanged:Connect(function(input)
         onDrag(input)
 
 mainFrame.InputEnded:Connect(function(input)
-    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch
         onDrag(input)
 
 	ExHub.ExHub.Name = "ExHub"
