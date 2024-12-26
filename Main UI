@@ -1,0 +1,1485 @@
+-- Instances:
+
+local ExHub = {
+	ExHub = Instance.new("ScreenGui"),
+	MainFrame = Instance.new("Frame"),
+	TopFrame = Instance.new("Frame"),
+	CloseNavButton = Instance.new("ImageButton"),
+	TextLabel = Instance.new("TextLabel"),
+	NavButton = Instance.new("ImageButton"),
+	UICorner = Instance.new("UICorner"),
+	Frame = Instance.new("Frame"),
+	NavFrame = Instance.new("ScrollingFrame"),
+	UIGridLayout = Instance.new("UIGridLayout"),
+	HomeBtn = Instance.new("TextButton"),
+	UICorner_2 = Instance.new("UICorner"),
+	Frame_2 = Instance.new("Frame"),
+	UICorner_3 = Instance.new("UICorner"),
+	UIPadding = Instance.new("UIPadding"),
+	ExclusivesV2Btn = Instance.new("TextButton"),
+	UICorner_4 = Instance.new("UICorner"),
+	Frame_3 = Instance.new("Frame"),
+	UICorner_5 = Instance.new("UICorner"),
+	RepostedBtn = Instance.new("TextButton"),
+	UICorner_6 = Instance.new("UICorner"),
+	Frame_4 = Instance.new("Frame"),
+	UICorner_7 = Instance.new("UICorner"),
+	LocalLibBtn = Instance.new("TextButton"),
+	UICorner_8 = Instance.new("UICorner"),
+	Frame_5 = Instance.new("Frame"),
+	UICorner_9 = Instance.new("UICorner"),
+	ExclusivesBtn = Instance.new("TextButton"),
+	UICorner_10 = Instance.new("UICorner"),
+	Frame_6 = Instance.new("Frame"),
+	UICorner_11 = Instance.new("UICorner"),
+	CreditsBtn = Instance.new("TextButton"),
+	UICorner_12 = Instance.new("UICorner"),
+	Frame_7 = Instance.new("Frame"),
+	UICorner_13 = Instance.new("UICorner"),
+	TerminalBtn = Instance.new("TextButton"),
+	UICorner_14 = Instance.new("UICorner"),
+	Frame_8 = Instance.new("Frame"),
+	UICorner_15 = Instance.new("UICorner"),
+	ExclusivesFrame = Instance.new("Frame"),
+	AnimFrame1 = Instance.new("ScrollingFrame"),
+	UIGridLayout_2 = Instance.new("UIGridLayout"),
+	UIPadding_2 = Instance.new("UIPadding"),
+	SearchFrame = Instance.new("Frame"),
+	ImageButton = Instance.new("ImageButton"),
+	SearchBar = Instance.new("TextBox"),
+	UICorner_16 = Instance.new("UICorner"),
+	LoadingFrame = Instance.new("Frame"),
+	TextLabel_2 = Instance.new("TextLabel"),
+	TextLabel_3 = Instance.new("TextLabel"),
+	LoadingFrameBar = Instance.new("Frame"),
+	LoadingBar = Instance.new("TextLabel"),
+	LoadingBar_Roundify_12px = Instance.new("ImageLabel"),
+	LoadingInfo = Instance.new("TextLabel"),
+	CreditsFrame = Instance.new("Frame"),
+	AnimFrame1_2 = Instance.new("Frame"),
+	TextLabel_4 = Instance.new("TextLabel"),
+	TextLabel_5 = Instance.new("TextLabel"),
+	TextLabel_6 = Instance.new("TextLabel"),
+	ImageLabel = Instance.new("ImageLabel"),
+	ImageLabel_2 = Instance.new("ImageLabel"),
+	TextLabel_7 = Instance.new("TextLabel"),
+	RepostedFrame = Instance.new("Frame"),
+	AnimFrame1_3 = Instance.new("ScrollingFrame"),
+	UIGridLayout_3 = Instance.new("UIGridLayout"),
+	UIPadding_3 = Instance.new("UIPadding"),
+	SearchFrame_2 = Instance.new("Frame"),
+	ImageButton_2 = Instance.new("ImageButton"),
+	SearchBar_2 = Instance.new("TextBox"),
+	UICorner_17 = Instance.new("UICorner"),
+	HomeFrame = Instance.new("Frame"),
+	AnimFrame1_4 = Instance.new("Frame"),
+	ProfileFrame = Instance.new("ImageLabel"),
+	ImageLabel_3 = Instance.new("ImageLabel"),
+	ImageLabel_4 = Instance.new("ImageLabel"),
+	TextLabel_8 = Instance.new("TextLabel"),
+	NewsFrame = Instance.new("ImageLabel"),
+	NewsText = Instance.new("TextLabel"),
+	SectionEs = Instance.new("Folder"),
+	Frame_9 = Instance.new("Frame"),
+	UICorner_18 = Instance.new("UICorner"),
+	Frame_10 = Instance.new("Frame"),
+	TextLabel_9 = Instance.new("TextLabel"),
+	OtherFrame = Instance.new("ImageLabel"),
+	Docs = Instance.new("TextButton"),
+	UICorner_19 = Instance.new("UICorner"),
+	Github = Instance.new("TextButton"),
+	UICorner_20 = Instance.new("UICorner"),
+	SectionEs_2 = Instance.new("Folder"),
+	Frame_11 = Instance.new("Frame"),
+	UICorner_21 = Instance.new("UICorner"),
+	Frame_12 = Instance.new("Frame"),
+	TextLabel_10 = Instance.new("TextLabel"),
+	LocalLibFrame = Instance.new("Frame"),
+	AnimFrame1_5 = Instance.new("ScrollingFrame"),
+	UIGridLayout_4 = Instance.new("UIGridLayout"),
+	UIPadding_4 = Instance.new("UIPadding"),
+	ADD = Instance.new("Frame"),
+	Frame_13 = Instance.new("ImageLabel"),
+	GameName = Instance.new("TextLabel"),
+	ImageLabel_5 = Instance.new("ImageLabel"),
+	Trigger = Instance.new("TextButton"),
+	REMOVE = Instance.new("Frame"),
+	Frame_14 = Instance.new("ImageLabel"),
+	GameName_2 = Instance.new("TextLabel"),
+	ImageLabel_6 = Instance.new("ImageLabel"),
+	Trigger_2 = Instance.new("TextButton"),
+	SearchFrame_3 = Instance.new("Frame"),
+	ImageButton_3 = Instance.new("ImageButton"),
+	SearchBar_3 = Instance.new("TextBox"),
+	UICorner_22 = Instance.new("UICorner"),
+	ExclusivesV2Frame = Instance.new("Frame"),
+	SearchFrame_4 = Instance.new("Frame"),
+	ImageButton_4 = Instance.new("ImageButton"),
+	SearchBar_4 = Instance.new("TextBox"),
+	UICorner_23 = Instance.new("UICorner"),
+	AnimFrame1_6 = Instance.new("ScrollingFrame"),
+	UIGridLayout_5 = Instance.new("UIGridLayout"),
+	UIPadding_5 = Instance.new("UIPadding"),
+	ADDFrame = Instance.new("Frame"),
+	AnimFrame1_7 = Instance.new("Frame"),
+	Namer = Instance.new("Frame"),
+	ScriptNamer = Instance.new("TextBox"),
+	Frame_15 = Instance.new("Frame"),
+	UICorner_24 = Instance.new("UICorner"),
+	BackButton = Instance.new("TextButton"),
+	UICorner_25 = Instance.new("UICorner"),
+	Frame_16 = Instance.new("Frame"),
+	UICorner_26 = Instance.new("UICorner"),
+	CreateButton = Instance.new("TextButton"),
+	UICorner_27 = Instance.new("UICorner"),
+	Frame_17 = Instance.new("Frame"),
+	UICorner_28 = Instance.new("UICorner"),
+	TestExecButton = Instance.new("TextButton"),
+	UICorner_29 = Instance.new("UICorner"),
+	Frame_18 = Instance.new("Frame"),
+	UICorner_30 = Instance.new("UICorner"),
+	Editor = Instance.new("ScrollingFrame"),
+	Frame_19 = Instance.new("Frame"),
+	UICorner_31 = Instance.new("UICorner"),
+	EditorFrame = Instance.new("ScrollingFrame"),
+	Source = Instance.new("TextBox"),
+	Comments_ = Instance.new("TextLabel"),
+	Globals_ = Instance.new("TextLabel"),
+	Keywords_ = Instance.new("TextLabel"),
+	RemoteHighlight_ = Instance.new("TextLabel"),
+	Strings_ = Instance.new("TextLabel"),
+	Tokens_ = Instance.new("TextLabel"),
+	Numbers_ = Instance.new("TextLabel"),
+	Lines = Instance.new("TextLabel"),
+	REMOVEFrame = Instance.new("Frame"),
+	AnimFrame1_8 = Instance.new("Frame"),
+	Frame_20 = Instance.new("Frame"),
+	RemoveButton = Instance.new("TextButton"),
+	UICorner_32 = Instance.new("UICorner"),
+	Frame_21 = Instance.new("Frame"),
+	UICorner_33 = Instance.new("UICorner"),
+	BackButton_2 = Instance.new("TextButton"),
+	UICorner_34 = Instance.new("UICorner"),
+	Frame_22 = Instance.new("Frame"),
+	UICorner_35 = Instance.new("UICorner"),
+	ScrollingFrame = Instance.new("ScrollingFrame"),
+	UIGridLayout_6 = Instance.new("UIGridLayout"),
+	UIPadding_6 = Instance.new("UIPadding"),
+	UICorner_36 = Instance.new("UICorner"),
+	TerminalFrame = Instance.new("Frame"),
+	AnimFrame1_9 = Instance.new("ScrollingFrame"),
+	UIPadding_7 = Instance.new("UIPadding"),
+	UIListLayout = Instance.new("UIListLayout"),
+	ExecuteFrame = Instance.new("Frame"),
+	ExecuteButton = Instance.new("ImageButton"),
+	ExecuteTextBox = Instance.new("TextBox"),
+	IntellisenseLabel = Instance.new("TextLabel"),
+	UICorner_37 = Instance.new("UICorner"),
+	SavedContainers = Instance.new("Folder"),
+	GameContainer = Instance.new("Frame"),
+	Frame_23 = Instance.new("Frame"),
+	Trigger_3 = Instance.new("TextButton"),
+	ImageLabel_7 = Instance.new("ImageLabel"),
+	ExecutedLabel = Instance.new("TextLabel"),
+	GameName_3 = Instance.new("TextLabel"),
+	UICorner_38 = Instance.new("UICorner"),
+	MessageContainer = Instance.new("TextLabel"),
+	RemoveContainer = Instance.new("TextButton"),
+	GoldGameContainer = Instance.new("Frame"),
+	Frame_24 = Instance.new("Frame"),
+	UIGradient = Instance.new("UIGradient"),
+	Trigger_4 = Instance.new("TextButton"),
+	ImageLabel_8 = Instance.new("ImageLabel"),
+	ExecutedLabel_2 = Instance.new("TextLabel"),
+	GameName_4 = Instance.new("TextLabel"),
+	UICorner_39 = Instance.new("UICorner"),
+	TerminalTextContainer = Instance.new("TextLabel"),
+	TerminalDividerContainer = Instance.new("Frame"),
+	Divider = Instance.new("Frame"),
+	UICorner_40 = Instance.new("UICorner"),
+}
+-----------------------------------------------
+-- Properties
+
+do
+
+	ExHub.ExHub.Name = "ExHub"
+	ExHub.ExHub.Parent = game.CoreGui
+
+	ExHub.MainFrame.Name = "MainFrame"
+	ExHub.MainFrame.Parent = ExHub.ExHub
+	ExHub.MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+	ExHub.MainFrame.BackgroundColor3 = Color3.fromRGB(41, 53, 68)
+	ExHub.MainFrame.BorderSizePixel = 0
+	ExHub.MainFrame.ClipsDescendants = true
+	ExHub.MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+	ExHub.MainFrame.Size = UDim2.new(0, 469, 0, 315)
+
+	ExHub.TopFrame.Name = "TopFrame"
+	ExHub.TopFrame.Parent = ExHub.MainFrame
+	ExHub.TopFrame.BackgroundColor3 = Color3.fromRGB(28, 41, 56)
+	ExHub.TopFrame.BorderSizePixel = 0
+	ExHub.TopFrame.Size = UDim2.new(1, 0, 0, 34)
+	ExHub.TopFrame.ZIndex = 3
+
+	ExHub.CloseNavButton.Name = "CloseNavButton"
+	ExHub.CloseNavButton.Parent = ExHub.TopFrame
+	ExHub.CloseNavButton.AnchorPoint = Vector2.new(0.5, 0.5)
+	ExHub.CloseNavButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ExHub.CloseNavButton.BackgroundTransparency = 1.000
+	ExHub.CloseNavButton.BorderSizePixel = 0
+	ExHub.CloseNavButton.Position = UDim2.new(0.0399999991, 0, 0.5, 0)
+	ExHub.CloseNavButton.Size = UDim2.new(0, 20, 0, 20)
+	ExHub.CloseNavButton.Visible = false
+	ExHub.CloseNavButton.ZIndex = 4
+	ExHub.CloseNavButton.Image = "http://www.roblox.com/asset/?id=5969992570"
+
+	ExHub.TextLabel.Parent = ExHub.TopFrame
+	ExHub.TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ExHub.TextLabel.BackgroundTransparency = 1.000
+	ExHub.TextLabel.Position = UDim2.new(0.857142866, 0, 0.0294117667, 0)
+	ExHub.TextLabel.Size = UDim2.new(0, 58, 0, 31)
+	ExHub.TextLabel.ZIndex = 4
+	ExHub.TextLabel.Font = Enum.Font.SourceSans
+	ExHub.TextLabel.Text = "ExHub"
+	ExHub.TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	ExHub.TextLabel.TextSize = 20.000
+
+	ExHub.NavButton.Name = "NavButton"
+	ExHub.NavButton.Parent = ExHub.TopFrame
+	ExHub.NavButton.AnchorPoint = Vector2.new(0.5, 0.5)
+	ExHub.NavButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ExHub.NavButton.BackgroundTransparency = 1.000
+	ExHub.NavButton.BorderSizePixel = 0
+	ExHub.NavButton.Position = UDim2.new(0.0399999991, 0, 0.5, 0)
+	ExHub.NavButton.Size = UDim2.new(0, 28, 0, 28)
+	ExHub.NavButton.ZIndex = 4
+	ExHub.NavButton.Image = "http://www.roblox.com/asset/?id=5942241281"
+
+	ExHub.UICorner.CornerRadius = UDim.new(0, 4)
+	ExHub.UICorner.Parent = ExHub.TopFrame
+
+	ExHub.Frame.Parent = ExHub.TopFrame
+	ExHub.Frame.AnchorPoint = Vector2.new(0, 1)
+	ExHub.Frame.BackgroundColor3 = Color3.fromRGB(28, 41, 56)
+	ExHub.Frame.BorderSizePixel = 0
+	ExHub.Frame.Position = UDim2.new(0, 0, 1, 0)
+	ExHub.Frame.Size = UDim2.new(1, 0, 0, 4)
+
+	ExHub.NavFrame.Name = "NavFrame"
+ExHub.NavFrame.Parent = ExHub.MainFrame
+ExHub.NavFrame.Active = true
+ExHub.NavFrame.BackgroundColor3 = Color3.fromRGB(28, 41, 56)
+ExHub.NavFrame.BorderSizePixel = 0
+ExHub.NavFrame.Position = UDim2.new(0, -125, 0, 34)
+ExHub.NavFrame.Size = UDim2.new(0, 125, 0, 281)
+ExHub.NavFrame.ZIndex = 2
+ExHub.NavFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
+
+ExHub.UIGridLayout.Parent = ExHub.NavFrame
+ExHub.UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+ExHub.UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+ExHub.UIGridLayout.CellPadding = UDim2.new(0, 5, 0, 7)
+ExHub.UIGridLayout.CellSize = UDim2.new(0, 100, 0, 28)
+
+ExHub.HomeBtn.Name = "HomeBtn"
+ExHub.HomeBtn.Parent = ExHub.NavFrame
+ExHub.HomeBtn.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.HomeBtn.BorderSizePixel = 0
+ExHub.HomeBtn.LayoutOrder = 1
+ExHub.HomeBtn.Size = UDim2.new(0, 200, 0, 50)
+ExHub.HomeBtn.ZIndex = 3
+ExHub.HomeBtn.Font = Enum.Font.SourceSans
+ExHub.HomeBtn.Text = "Home"
+ExHub.HomeBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.HomeBtn.TextSize = 14.000
+
+ExHub.UICorner_2.CornerRadius = UDim.new(0, 3)
+ExHub.UICorner_2.Parent = ExHub.HomeBtn
+
+ExHub.Frame_2.Parent = ExHub.HomeBtn
+ExHub.Frame_2.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.Frame_2.Size = UDim2.new(0, 2, 1, 0)
+ExHub.Frame_2.ZIndex = 4
+
+ExHub.UICorner_3.Parent = ExHub.Frame_2
+
+ExHub.UIPadding.Parent = ExHub.NavFrame
+ExHub.UIPadding.PaddingBottom = UDim.new(0, 15)
+ExHub.UIPadding.PaddingTop = UDim.new(0, 15)
+
+ExHub.ExclusivesV2Btn.Name = "ExclusivesV2Btn"
+ExHub.ExclusivesV2Btn.Parent = ExHub.NavFrame
+ExHub.ExclusivesV2Btn.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.ExclusivesV2Btn.BorderSizePixel = 0
+ExHub.ExclusivesV2Btn.LayoutOrder = 2
+ExHub.ExclusivesV2Btn.Size = UDim2.new(0, 200, 0, 50)
+ExHub.ExclusivesV2Btn.ZIndex = 3
+ExHub.ExclusivesV2Btn.Font = Enum.Font.SourceSans
+ExHub.ExclusivesV2Btn.Text = "Exclusives V2"
+ExHub.ExclusivesV2Btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.ExclusivesV2Btn.TextSize = 14.000
+
+ExHub.UICorner_4.CornerRadius = UDim.new(0, 3)
+ExHub.UICorner_4.Parent = ExHub.ExclusivesV2Btn
+
+ExHub.Frame_3.Parent = ExHub.ExclusivesV2Btn
+ExHub.Frame_3.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.Frame_3.Size = UDim2.new(0, 2, 1, 0)
+ExHub.Frame_3.ZIndex = 4
+
+ExHub.UICorner_5.Parent = ExHub.Frame_3
+
+ExHub.RepostedBtn.Name = "RepostedBtn"
+ExHub.RepostedBtn.Parent = ExHub.NavFrame
+ExHub.RepostedBtn.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.RepostedBtn.BorderSizePixel = 0
+ExHub.RepostedBtn.LayoutOrder = 4
+ExHub.RepostedBtn.Size = UDim2.new(0, 200, 0, 50)
+ExHub.RepostedBtn.ZIndex = 3
+ExHub.RepostedBtn.Font = Enum.Font.SourceSans
+ExHub.RepostedBtn.Text = "Reposted"
+ExHub.RepostedBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.RepostedBtn.TextSize = 14.000
+
+ExHub.UICorner_6.CornerRadius = UDim.new(0, 3)
+ExHub.UICorner_6.Parent = ExHub.RepostedBtn
+
+ExHub.Frame_4.Parent = ExHub.RepostedBtn
+ExHub.Frame_4.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.Frame_4.Size = UDim2.new(0, 2, 1, 0)
+ExHub.Frame_4.ZIndex = 4
+
+ExHub.UICorner_7.Parent = ExHub.Frame_4
+
+ExHub.LocalLibBtn.Name = "LocalLibBtn"
+ExHub.LocalLibBtn.Parent = ExHub.NavFrame
+ExHub.LocalLibBtn.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.LocalLibBtn.BorderSizePixel = 0
+ExHub.LocalLibBtn.LayoutOrder = 5
+ExHub.LocalLibBtn.Size = UDim2.new(0, 200, 0, 50)
+ExHub.LocalLibBtn.ZIndex = 3
+ExHub.LocalLibBtn.Font = Enum.Font.SourceSans
+ExHub.LocalLibBtn.Text = "Local Lib"
+ExHub.LocalLibBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.LocalLibBtn.TextSize = 14.000
+
+	ExHub.UICorner_8.CornerRadius = UDim.new(0, 3)
+ExHub.UICorner_8.Parent = ExHub.LocalLibBtn
+
+ExHub.Frame_5.Parent = ExHub.LocalLibBtn
+ExHub.Frame_5.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.Frame_5.Size = UDim2.new(0, 2, 1, 0)
+ExHub.Frame_5.ZIndex = 4
+
+ExHub.UICorner_9.Parent = ExHub.Frame_5
+
+ExHub.ExclusivesBtn.Name = "ExclusivesBtn"
+ExHub.ExclusivesBtn.Parent = ExHub.NavFrame
+ExHub.ExclusivesBtn.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.ExclusivesBtn.BorderSizePixel = 0
+ExHub.ExclusivesBtn.LayoutOrder = 3
+ExHub.ExclusivesBtn.Size = UDim2.new(0, 200, 0, 50)
+ExHub.ExclusivesBtn.ZIndex = 3
+ExHub.ExclusivesBtn.Font = Enum.Font.SourceSans
+ExHub.ExclusivesBtn.Text = "Exclusives V1"
+ExHub.ExclusivesBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.ExclusivesBtn.TextSize = 14.000
+
+ExHub.UICorner_10.CornerRadius = UDim.new(0, 3)
+ExHub.UICorner_10.Parent = ExHub.ExclusivesBtn
+
+ExHub.Frame_6.Parent = ExHub.ExclusivesBtn
+ExHub.Frame_6.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.Frame_6.Size = UDim2.new(0, 2, 1, 0)
+ExHub.Frame_6.ZIndex = 4
+
+ExHub.UICorner_11.Parent = ExHub.Frame_6
+
+ExHub.CreditsBtn.Name = "CreditsBtn"
+ExHub.CreditsBtn.Parent = ExHub.NavFrame
+ExHub.CreditsBtn.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.CreditsBtn.BorderSizePixel = 0
+ExHub.CreditsBtn.LayoutOrder = 7
+ExHub.CreditsBtn.Size = UDim2.new(0, 200, 0, 50)
+ExHub.CreditsBtn.ZIndex = 3
+ExHub.CreditsBtn.Font = Enum.Font.SourceSans
+ExHub.CreditsBtn.Text = "Credits"
+ExHub.CreditsBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.CreditsBtn.TextSize = 14.000
+
+ExHub.UICorner_12.CornerRadius = UDim.new(0, 3)
+ExHub.UICorner_12.Parent = ExHub.CreditsBtn
+
+ExHub.Frame_7.Parent = ExHub.CreditsBtn
+ExHub.Frame_7.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.Frame_7.Size = UDim2.new(0, 2, 1, 0)
+ExHub.Frame_7.ZIndex = 4
+
+ExHub.UICorner_13.Parent = ExHub.Frame_7
+
+ExHub.TerminalBtn.Name = "TerminalBtn"
+ExHub.TerminalBtn.Parent = ExHub.NavFrame
+ExHub.TerminalBtn.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.TerminalBtn.BorderSizePixel = 0
+ExHub.TerminalBtn.LayoutOrder = 6
+ExHub.TerminalBtn.Size = UDim2.new(0, 200, 0, 50)
+ExHub.TerminalBtn.ZIndex = 3
+ExHub.TerminalBtn.Font = Enum.Font.SourceSans
+ExHub.TerminalBtn.Text = "Terminal"
+ExHub.TerminalBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.TerminalBtn.TextSize = 14.000
+
+ExHub.UICorner_14.CornerRadius = UDim.new(0, 3)
+ExHub.UICorner_14.Parent = ExHub.TerminalBtn
+
+ExHub.Frame_8.Parent = ExHub.TerminalBtn
+ExHub.Frame_8.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.Frame_8.Size = UDim2.new(0, 2, 1, 0)
+ExHub.Frame_8.ZIndex = 4
+
+	ExHub.UICorner_15.Parent = ExHub.Frame_8
+
+ExHub.ExclusivesFrame.Name = "ExclusivesFrame"
+ExHub.ExclusivesFrame.Parent = ExHub.MainFrame
+ExHub.ExclusivesFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.ExclusivesFrame.BackgroundTransparency = 1.000
+ExHub.ExclusivesFrame.Position = UDim2.new(0, 0, 0, 34)
+ExHub.ExclusivesFrame.Size = UDim2.new(1, 0, 0, 281)
+ExHub.ExclusivesFrame.Visible = false
+
+ExHub.AnimFrame1.Name = "AnimFrame1"
+ExHub.AnimFrame1.Parent = ExHub.ExclusivesFrame
+ExHub.AnimFrame1.Active = true
+ExHub.AnimFrame1.AnchorPoint = Vector2.new(0, 1)
+ExHub.AnimFrame1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.AnimFrame1.BackgroundTransparency = 1.000
+ExHub.AnimFrame1.BorderSizePixel = 0
+ExHub.AnimFrame1.Position = UDim2.new(0, 0, 1, 0)
+ExHub.AnimFrame1.Size = UDim2.new(1, 0, 1, -55)
+ExHub.AnimFrame1.CanvasSize = UDim2.new(0, 0, 0, 0)
+
+ExHub.UIGridLayout_2.Parent = ExHub.AnimFrame1
+ExHub.UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+ExHub.UIGridLayout_2.CellPadding = UDim2.new(0, 10, 0, 10)
+
+ExHub.UIPadding_2.Parent = ExHub.AnimFrame1
+ExHub.UIPadding_2.PaddingBottom = UDim.new(0, 20)
+ExHub.UIPadding_2.PaddingLeft = UDim.new(0, 15)
+ExHub.UIPadding_2.PaddingRight = UDim.new(0, 15)
+
+ExHub.SearchFrame.Name = "SearchFrame"
+ExHub.SearchFrame.Parent = ExHub.ExclusivesFrame
+ExHub.SearchFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+ExHub.SearchFrame.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.SearchFrame.Position = UDim2.new(0.489339024, 0, 0, 26)
+ExHub.SearchFrame.Size = UDim2.new(0, 430, 0, 34)
+
+ExHub.ImageButton.Parent = ExHub.SearchFrame
+ExHub.ImageButton.AnchorPoint = Vector2.new(0, 0.5)
+ExHub.ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.ImageButton.BackgroundTransparency = 1.000
+ExHub.ImageButton.BorderSizePixel = 0
+ExHub.ImageButton.ClipsDescendants = true
+ExHub.ImageButton.Position = UDim2.new(0.0240000002, 0, 0.5, 0)
+ExHub.ImageButton.Size = UDim2.new(0, 22, 0, 22)
+ExHub.ImageButton.Image = "http://www.roblox.com/asset/?id=3192528333"
+ExHub.ImageButton.ImageColor3 = Color3.fromRGB(35, 47, 62)
+
+ExHub.SearchBar.Name = "SearchBar"
+ExHub.SearchBar.Parent = ExHub.SearchFrame
+ExHub.SearchBar.AnchorPoint = Vector2.new(0, 0.5)
+ExHub.SearchBar.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.SearchBar.BorderColor3 = Color3.fromRGB(28, 41, 56)
+ExHub.SearchBar.BorderSizePixel = 0
+ExHub.SearchBar.Position = UDim2.new(0.116999999, 0, 0.5, 0)
+ExHub.SearchBar.Size = UDim2.new(0, 364, 0, 22)
+ExHub.SearchBar.Font = Enum.Font.SourceSans
+ExHub.SearchBar.PlaceholderText = "Click to search..."
+ExHub.SearchBar.Text = ""
+ExHub.SearchBar.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.SearchBar.TextSize = 14.000
+ExHub.SearchBar.TextWrapped = true
+ExHub.SearchBar.TextXAlignment = Enum.TextXAlignment.Left
+
+ExHub.UICorner_16.CornerRadius = UDim.new(0, 4)
+ExHub.UICorner_16.Parent = ExHub.SearchFrame
+
+	ExHub.LoadingFrame.Name = "LoadingFrame"
+ExHub.LoadingFrame.Parent = ExHub.MainFrame
+ExHub.LoadingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.LoadingFrame.BackgroundTransparency = 1.000
+ExHub.LoadingFrame.Position = UDim2.new(0, 0, 0, 34)
+ExHub.LoadingFrame.Size = UDim2.new(1, 0, 0, 281)
+ExHub.LoadingFrame.Visible = false
+
+ExHub.TextLabel_2.Parent = ExHub.LoadingFrame
+ExHub.TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.TextLabel_2.BackgroundTransparency = 1.000
+ExHub.TextLabel_2.Position = UDim2.new(0.409254879, 0, 0.181494668, 0)
+ExHub.TextLabel_2.Size = UDim2.new(0, 41, 0, 54)
+ExHub.TextLabel_2.Font = Enum.Font.Cartoon
+ExHub.TextLabel_2.Text = "Ex"
+ExHub.TextLabel_2.TextColor3 = Color3.fromRGB(190, 190, 190)
+ExHub.TextLabel_2.TextSize = 35.000
+ExHub.TextLabel_2.TextWrapped = true
+ExHub.TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+ExHub.TextLabel_3.Parent = ExHub.LoadingFrame
+ExHub.TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.TextLabel_3.BackgroundTransparency = 1.000
+ExHub.TextLabel_3.Position = UDim2.new(0.498399824, 0, 0.181494653, 0)
+ExHub.TextLabel_3.Size = UDim2.new(0, 62, 0, 54)
+ExHub.TextLabel_3.Font = Enum.Font.Cartoon
+ExHub.TextLabel_3.Text = "Hub"
+ExHub.TextLabel_3.TextColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.TextLabel_3.TextSize = 35.000
+ExHub.TextLabel_3.TextWrapped = true
+ExHub.TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+ExHub.LoadingFrameBar.Name = "LoadingFrameBar"
+ExHub.LoadingFrameBar.Parent = ExHub.LoadingFrame
+ExHub.LoadingFrameBar.AnchorPoint = Vector2.new(0.5, 0.5)
+ExHub.LoadingFrameBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.LoadingFrameBar.BackgroundTransparency = 1.000
+ExHub.LoadingFrameBar.Position = UDim2.new(0.5, 0, 0, 140)
+ExHub.LoadingFrameBar.Size = UDim2.new(0, 220, 0, 9)
+
+ExHub.LoadingBar.Name = "LoadingBar"
+ExHub.LoadingBar.Parent = ExHub.LoadingFrameBar
+ExHub.LoadingBar.AnchorPoint = Vector2.new(0, 0.5)
+ExHub.LoadingBar.BackgroundColor3 = Color3.fromRGB(28, 41, 56)
+ExHub.LoadingBar.BackgroundTransparency = 1.000
+ExHub.LoadingBar.BorderSizePixel = 0
+ExHub.LoadingBar.Position = UDim2.new(0, 0, 0, 4)
+ExHub.LoadingBar.Size = UDim2.new(0, 0, 0, 9)
+ExHub.LoadingBar.Font = Enum.Font.SourceSans
+ExHub.LoadingBar.Text = ""
+ExHub.LoadingBar.TextColor3 = Color3.fromRGB(0, 0, 0)
+ExHub.LoadingBar.TextSize = 14.000
+
+ExHub.LoadingBar_Roundify_12px.Name = "LoadingBar_Roundify_12px"
+ExHub.LoadingBar_Roundify_12px.Parent = ExHub.LoadingBar
+ExHub.LoadingBar_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+ExHub.LoadingBar_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.LoadingBar_Roundify_12px.BackgroundTransparency = 1.000
+ExHub.LoadingBar_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+ExHub.LoadingBar_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+ExHub.LoadingBar_Roundify_12px.Image = "rbxassetid://3570695787"
+ExHub.LoadingBar_Roundify_12px.ImageColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.LoadingBar_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+ExHub.LoadingBar_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+ExHub.LoadingBar_Roundify_12px.SliceScale = 0.120
+
+ExHub.LoadingInfo.Name = "LoadingInfo"
+ExHub.LoadingInfo.Parent = ExHub.LoadingFrame
+ExHub.LoadingInfo.AnchorPoint = Vector2.new(0.5, 0.5)
+ExHub.LoadingInfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.LoadingInfo.BackgroundTransparency = 1.000
+ExHub.LoadingInfo.Position = UDim2.new(0.5, 0, 0, 196)
+ExHub.LoadingInfo.Size = UDim2.new(0, 200, 0, 50)
+ExHub.LoadingInfo.Font = Enum.Font.SourceSans
+ExHub.LoadingInfo.Text = ""
+ExHub.LoadingInfo.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.LoadingInfo.TextSize = 14.000
+
+ExHub.CreditsFrame.Name = "CreditsFrame"
+ExHub.CreditsFrame.Parent = ExHub.MainFrame
+ExHub.CreditsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.CreditsFrame.BackgroundTransparency = 1.000
+ExHub.CreditsFrame.Position = UDim2.new(0, 0, 0, 34)
+ExHub.CreditsFrame.Size = UDim2.new(1, 0, 0, 281)
+ExHub.CreditsFrame.Visible = false
+
+ExHub.AnimFrame1_2.Name = "AnimFrame1"
+ExHub.AnimFrame1_2.Parent = ExHub.CreditsFrame
+ExHub.AnimFrame1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.AnimFrame1_2.BackgroundTransparency = 1.000
+ExHub.AnimFrame1_2.Size = UDim2.new(1, 0, 1, 0)
+
+	ExHub.TextLabel_4.Parent = ExHub.AnimFrame1_2
+ExHub.TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.TextLabel_4.BackgroundTransparency = 1.000
+ExHub.TextLabel_4.Position = UDim2.new(0.281449914, 0, 0.0533807874, 0)
+ExHub.TextLabel_4.Size = UDim2.new(0, 200, 0, 43)
+ExHub.TextLabel_4.Font = Enum.Font.SourceSans
+ExHub.TextLabel_4.Text = "Developer:"
+ExHub.TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.TextLabel_4.TextSize = 21.000
+
+ExHub.TextLabel_5.Parent = ExHub.AnimFrame1_2
+ExHub.TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.TextLabel_5.BackgroundTransparency = 1.000
+ExHub.TextLabel_5.Position = UDim2.new(0.285714298, 0, 0.640569389, 0)
+ExHub.TextLabel_5.Size = UDim2.new(0, 200, 0, 43)
+ExHub.TextLabel_5.Font = Enum.Font.SourceSans
+ExHub.TextLabel_5.Text = " V3rm: CDXX"
+ExHub.TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.TextLabel_5.TextSize = 18.000
+ExHub.TextLabel_5.TextWrapped = true
+
+ExHub.TextLabel_6.Parent = ExHub.AnimFrame1_2
+ExHub.TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.TextLabel_6.BackgroundTransparency = 1.000
+ExHub.TextLabel_6.Position = UDim2.new(0.268656731, 0, 0.555160224, 0)
+ExHub.TextLabel_6.Size = UDim2.new(0, 213, 0, 43)
+ExHub.TextLabel_6.Font = Enum.Font.SourceSans
+ExHub.TextLabel_6.Text = "Discord: CEO of Africa#0591"
+ExHub.TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.TextLabel_6.TextSize = 18.000
+ExHub.TextLabel_6.TextWrapped = true
+
+ExHub.ImageLabel.Parent = ExHub.AnimFrame1_2
+ExHub.ImageLabel.AnchorPoint = Vector2.new(0, 0.5)
+ExHub.ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.ImageLabel.BackgroundTransparency = 1.000
+ExHub.ImageLabel.BorderSizePixel = 0
+ExHub.ImageLabel.Position = UDim2.new(0.411000013, 0, 0.400000006, 0)
+ExHub.ImageLabel.Size = UDim2.new(0, 81, 0, 82)
+ExHub.ImageLabel.Image = "http://www.roblox.com/asset/?id=5980933241"
+
+ExHub.ImageLabel_2.Parent = ExHub.ImageLabel
+ExHub.ImageLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+ExHub.ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.ImageLabel_2.BackgroundTransparency = 1.000
+ExHub.ImageLabel_2.BorderSizePixel = 0
+ExHub.ImageLabel_2.Position = UDim2.new(0.506172836, 0, 0.5, 0)
+ExHub.ImageLabel_2.Size = UDim2.new(0, 82, 0, 83)
+ExHub.ImageLabel_2.Image = "rbxassetid://4031889928"
+ExHub.ImageLabel_2.ImageColor3 = Color3.fromRGB(41, 53, 68)
+
+ExHub.TextLabel_7.Parent = ExHub.AnimFrame1_2
+ExHub.TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.TextLabel_7.BackgroundTransparency = 1.000
+ExHub.TextLabel_7.Position = UDim2.new(0.281449914, 0, 0.822064042, 0)
+ExHub.TextLabel_7.Size = UDim2.new(0, 200, 0, 50)
+ExHub.TextLabel_7.Font = Enum.Font.SourceSans
+ExHub.TextLabel_7.Text = "Special thanks to 0_King_0#6336 for testing"
+ExHub.TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.TextLabel_7.TextSize = 14.000
+
+ExHub.RepostedFrame.Name = "RepostedFrame"
+ExHub.RepostedFrame.Parent = ExHub.MainFrame
+ExHub.RepostedFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.RepostedFrame.BackgroundTransparency = 1.000
+ExHub.RepostedFrame.Position = UDim2.new(0, 0, 0, 34)
+ExHub.RepostedFrame.Size = UDim2.new(1, 0, 0, 281)
+ExHub.RepostedFrame.Visible = false
+
+ExHub.AnimFrame1_3.Name = "AnimFrame1"
+ExHub.AnimFrame1_3.Parent = ExHub.RepostedFrame
+ExHub.AnimFrame1_3.Active = true
+ExHub.AnimFrame1_3.AnchorPoint = Vector2.new(0, 1)
+ExHub.AnimFrame1_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.AnimFrame1_3.BackgroundTransparency = 1.000
+ExHub.AnimFrame1_3.BorderSizePixel = 0
+ExHub.AnimFrame1_3.Position = UDim2.new(0, 0, 1, 0)
+ExHub.AnimFrame1_3.Size = UDim2.new(1, 0, 1, -55)
+ExHub.AnimFrame1_3.CanvasSize = UDim2.new(0, 0, 0, 0)
+
+ExHub.UIGridLayout_3.Parent = ExHub.AnimFrame1_3
+ExHub.UIGridLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+ExHub.UIGridLayout_3.CellPadding = UDim2.new(0, 10, 0, 10)
+
+ExHub.UIPadding_3.Parent = ExHub.AnimFrame1_3
+ExHub.UIPadding_3.PaddingBottom = UDim.new(0, 20)
+ExHub.UIPadding_3.PaddingLeft = UDim.new(0, 15)
+ExHub.UIPadding_3.PaddingRight = UDim.new(0, 15)
+
+ExHub.SearchFrame_2.Name = "SearchFrame"
+ExHub.SearchFrame_2.Parent = ExHub.RepostedFrame
+ExHub.SearchFrame_2.AnchorPoint = Vector2.new(0.5, 0.5)
+ExHub.SearchFrame_2.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.SearchFrame_2.Position = UDim2.new(0.489339024, 0, 0, 26)
+ExHub.SearchFrame_2.Size = UDim2.new(0, 430, 0, 34)
+
+	ExHub.ImageButton_2.Parent = ExHub.SearchFrame_2
+ExHub.ImageButton_2.AnchorPoint = Vector2.new(0, 0.5)
+ExHub.ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.ImageButton_2.BackgroundTransparency = 1.000
+ExHub.ImageButton_2.BorderSizePixel = 0
+ExHub.ImageButton_2.ClipsDescendants = true
+ExHub.ImageButton_2.Position = UDim2.new(0.0240000002, 0, 0.5, 0)
+ExHub.ImageButton_2.Size = UDim2.new(0, 22, 0, 22)
+ExHub.ImageButton_2.Image = "http://www.roblox.com/asset/?id=3192528333"
+ExHub.ImageButton_2.ImageColor3 = Color3.fromRGB(35, 47, 62)
+
+ExHub.SearchBar_2.Name = "SearchBar"
+ExHub.SearchBar_2.Parent = ExHub.SearchFrame_2
+ExHub.SearchBar_2.AnchorPoint = Vector2.new(0, 0.5)
+ExHub.SearchBar_2.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.SearchBar_2.BorderColor3 = Color3.fromRGB(28, 41, 56)
+ExHub.SearchBar_2.BorderSizePixel = 0
+ExHub.SearchBar_2.Position = UDim2.new(0.116999999, 0, 0.5, 0)
+ExHub.SearchBar_2.Size = UDim2.new(0, 364, 0, 22)
+ExHub.SearchBar_2.Font = Enum.Font.SourceSans
+ExHub.SearchBar_2.PlaceholderText = "Click to search..."
+ExHub.SearchBar_2.Text = ""
+ExHub.SearchBar_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.SearchBar_2.TextSize = 14.000
+ExHub.SearchBar_2.TextWrapped = true
+ExHub.SearchBar_2.TextXAlignment = Enum.TextXAlignment.Left
+
+ExHub.UICorner_17.CornerRadius = UDim.new(0, 4)
+ExHub.UICorner_17.Parent = ExHub.SearchFrame_2
+
+ExHub.HomeFrame.Name = "HomeFrame"
+ExHub.HomeFrame.Parent = ExHub.MainFrame
+ExHub.HomeFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.HomeFrame.BackgroundTransparency = 1.000
+ExHub.HomeFrame.Position = UDim2.new(0, 0, 0, 34)
+ExHub.HomeFrame.Size = UDim2.new(1, 0, 0, 281)
+ExHub.HomeFrame.Visible = false
+
+ExHub.AnimFrame1_4.Name = "AnimFrame1"
+ExHub.AnimFrame1_4.Parent = ExHub.HomeFrame
+ExHub.AnimFrame1_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.AnimFrame1_4.BackgroundTransparency = 1.000
+ExHub.AnimFrame1_4.Size = UDim2.new(1, 0, 1, 0)
+
+ExHub.ProfileFrame.Name = "ProfileFrame"
+ExHub.ProfileFrame.Parent = ExHub.AnimFrame1_4
+ExHub.ProfileFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.ProfileFrame.BackgroundTransparency = 1.000
+ExHub.ProfileFrame.Position = UDim2.new(0, 20, 0.0500000007, 0)
+ExHub.ProfileFrame.Size = UDim2.new(1, -40, 0, 120)
+ExHub.ProfileFrame.Image = "rbxassetid://3570695787"
+ExHub.ProfileFrame.ImageColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.ProfileFrame.ScaleType = Enum.ScaleType.Slice
+ExHub.ProfileFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+ExHub.ProfileFrame.SliceScale = 0.040
+
+ExHub.ImageLabel_3.Parent = ExHub.ProfileFrame
+ExHub.ImageLabel_3.AnchorPoint = Vector2.new(0, 0.5)
+ExHub.ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.ImageLabel_3.BackgroundTransparency = 1.000
+ExHub.ImageLabel_3.BorderSizePixel = 0
+ExHub.ImageLabel_3.Position = UDim2.new(0.0700000003, 0, 0.5, 0)
+ExHub.ImageLabel_3.Size = UDim2.new(0, 81, 0, 82)
+ExHub.ImageLabel_3.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+ExHub.ImageLabel_4.Parent = ExHub.ImageLabel_3
+ExHub.ImageLabel_4.AnchorPoint = Vector2.new(0.5, 0.5)
+ExHub.ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.ImageLabel_4.BackgroundTransparency = 1.000
+ExHub.ImageLabel_4.BorderSizePixel = 0
+ExHub.ImageLabel_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+ExHub.ImageLabel_4.Size = UDim2.new(0, 81, 0, 83)
+ExHub.ImageLabel_4.Image = "rbxassetid://4031889928"
+ExHub.ImageLabel_4.ImageColor3 = Color3.fromRGB(35, 47, 62)
+
+ExHub.TextLabel_8.Parent = ExHub.ProfileFrame
+ExHub.TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.TextLabel_8.BackgroundTransparency = 1.000
+ExHub.TextLabel_8.Position = UDim2.new(0.367984951, 0, 0.145299152, 0)
+ExHub.TextLabel_8.Size = UDim2.new(0, 239, 0, 83)
+ExHub.TextLabel_8.Font = Enum.Font.SourceSans
+ExHub.TextLabel_8.Text = "Hello happygeneral2015, Thank you for using Ex Hub"
+ExHub.TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.TextLabel_8.TextSize = 16.000
+ExHub.TextLabel_8.TextWrapped = true
+
+ExHub.NewsFrame.Name = "NewsFrame"
+ExHub.NewsFrame.Parent = ExHub.AnimFrame1_4
+ExHub.NewsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.NewsFrame.BackgroundTransparency = 1.000
+ExHub.NewsFrame.Position = UDim2.new(0, 20, 0.5, 0)
+ExHub.NewsFrame.Size = UDim2.new(0, 260, 0, 125)
+ExHub.NewsFrame.Image = "rbxassetid://3570695787"
+ExHub.NewsFrame.ImageColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.NewsFrame.ScaleType = Enum.ScaleType.Slice
+ExHub.NewsFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+ExHub.NewsFrame.SliceScale = 0.040
+
+ExHub.NewsText.Name = "NewsText"
+ExHub.NewsText.Parent = ExHub.NewsFrame
+ExHub.NewsText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.NewsText.BackgroundTransparency = 1.000
+ExHub.NewsText.Position = UDim2.new(0.0454685688, 0, 0.391094238, 0)
+ExHub.NewsText.Size = UDim2.new(0, 231, 0, 68)
+ExHub.NewsText.Font = Enum.Font.SourceSans
+ExHub.NewsText.Text = "There is currently no news to display."
+ExHub.NewsText.TextColor3 = Color3.fromRGB(195, 195, 195)
+ExHub.NewsText.TextSize = 15.000
+ExHub.NewsText.TextWrapped = true
+ExHub.NewsText.TextXAlignment = Enum.TextXAlignment.Left
+ExHub.NewsText.TextYAlignment = Enum.TextYAlignment.Top
+
+ExHub.SectionEx.Name = "SectionEx"
+ExHub.SectionEx.Parent = ExHub.NewsFrame
+
+ExHub.Frame_9.Parent = ExHub.SectionEx
+ExHub.Frame_9.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.Frame_9.Size = UDim2.new(0, 2, 0, 36)
+
+ExHub.UICorner_18.Parent = ExHub.Frame_9
+
+ExHub.Frame_10.Parent = ExHub.SectionEx
+ExHub.Frame_10.BackgroundColor3 = Color3.fromRGB(112, 112, 112)
+ExHub.Frame_10.BackgroundTransparency = 0.750
+ExHub.Frame_10.BorderSizePixel = 0
+ExHub.Frame_10.Position = UDim2.new(0, 0, 0.294290125, 0)
+ExHub.Frame_10.Size = UDim2.new(1, 0, 0, 1)
+
+ExHub.TextLabel_9.Parent = ExHub.SectionEx
+ExHub.TextLabel_9.AnchorPoint = Vector2.new(1, 0)
+ExHub.TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.TextLabel_9.BackgroundTransparency = 1.000
+ExHub.TextLabel_9.Position = UDim2.new(0.951718807, 0, 0.0439999998, 0)
+ExHub.TextLabel_9.Size = UDim2.new(0.902343631, 0, 0, 24)
+ExHub.TextLabel_9.Font = Enum.Font.SourceSans
+ExHub.TextLabel_9.Text = "News"
+ExHub.TextLabel_9.TextColor3 = Color3.fromRGB(211, 216, 226)
+ExHub.TextLabel_9.TextSize = 14.000
+ExHub.TextLabel_9.TextXAlignment = Enum.TextXAlignment.Left
+
+	ExHub.OtherFrame.Name = "OtherFrame"
+ExHub.OtherFrame.Parent = ExHub.AnimFrame1_4
+ExHub.OtherFrame.AnchorPoint = Vector2.new(1, 0)
+ExHub.OtherFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.OtherFrame.BackgroundTransparency = 1.000
+ExHub.OtherFrame.Position = UDim2.new(1, -20, 0.5, 0)
+ExHub.OtherFrame.Size = UDim2.new(0, 161, 0, 125)
+ExHub.OtherFrame.Image = "rbxassetid://3570695787"
+ExHub.OtherFrame.ImageColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.OtherFrame.ScaleType = Enum.ScaleType.Slice
+ExHub.OtherFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+ExHub.OtherFrame.SliceScale = 0.040
+
+ExHub.Docs.Name = "Docs"
+ExHub.Docs.Parent = ExHub.OtherFrame
+ExHub.Docs.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.Docs.BorderSizePixel = 0
+ExHub.Docs.Position = UDim2.new(0, 10, 0.5, 20)
+ExHub.Docs.Size = UDim2.new(0, 110, 0, 28)
+ExHub.Docs.Font = Enum.Font.SourceSans
+ExHub.Docs.Text = "Docs"
+ExHub.Docs.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.Docs.TextSize = 14.000
+
+ExHub.UICorner_19.CornerRadius = UDim.new(0, 3)
+ExHub.UICorner_19.Parent = ExHub.Docs
+
+ExHub.Github.Name = "Github"
+ExHub.Github.Parent = ExHub.OtherFrame
+ExHub.Github.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.Github.BorderSizePixel = 0
+ExHub.Github.Position = UDim2.new(0, 10, 0.5, -15)
+ExHub.Github.Size = UDim2.new(0, 110, 0, 28)
+ExHub.Github.Font = Enum.Font.SourceSans
+ExHub.Github.Text = "Github"
+ExHub.Github.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.Github.TextSize = 14.000
+
+ExHub.UICorner_20.CornerRadius = UDim.new(0, 3)
+ExHub.UICorner_20.Parent = ExHub.Github
+
+ExHub.SectionEx_2.Name = "SectionEx"
+ExHub.SectionEx_2.Parent = ExHub.OtherFrame
+
+ExHub.Frame_11.Parent = ExHub.SectionEx_2
+ExHub.Frame_11.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.Frame_11.Size = UDim2.new(0, 2, 0, 36)
+
+ExHub.UICorner_21.Parent = ExHub.Frame_11
+
+ExHub.Frame_12.Parent = ExHub.SectionEx_2
+ExHub.Frame_12.BackgroundColor3 = Color3.fromRGB(112, 112, 112)
+ExHub.Frame_12.BackgroundTransparency = 0.750
+ExHub.Frame_12.BorderSizePixel = 0
+ExHub.Frame_12.Position = UDim2.new(0, 0, 0.294290125, 0)
+ExHub.Frame_12.Size = UDim2.new(1, 0, 0, 1)
+
+ExHub.TextLabel_10.Parent = ExHub.SectionEx_2
+ExHub.TextLabel_10.AnchorPoint = Vector2.new(1, 0)
+ExHub.TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.TextLabel_10.BackgroundTransparency = 1.000
+ExHub.TextLabel_10.Position = UDim2.new(1, 0, 0.0439999998, 0)
+ExHub.TextLabel_10.Size = UDim2.new(0.899999976, 0, 0, 24)
+ExHub.TextLabel_10.Font = Enum.Font.SourceSans
+ExHub.TextLabel_10.Text = "Other"
+ExHub.TextLabel_10.TextColor3 = Color3.fromRGB(211, 216, 226)
+ExHub.TextLabel_10.TextSize = 14.000
+ExHub.TextLabel_10.TextXAlignment = Enum.TextXAlignment.Left
+
+ExHub.LocalLibFrame.Name = "LocalLibFrame"
+ExHub.LocalLibFrame.Parent = ExHub.MainFrame
+ExHub.LocalLibFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.LocalLibFrame.BackgroundTransparency = 1.000
+ExHub.LocalLibFrame.Position = UDim2.new(0, 0, 0, 34)
+ExHub.LocalLibFrame.Size = UDim2.new(1, 0, 0, 281)
+ExHub.LocalLibFrame.Visible = false
+
+ExHub.AnimFrame1_5.Name = "AnimFrame1"
+ExHub.AnimFrame1_5.Parent = ExHub.LocalLibFrame
+ExHub.AnimFrame1_5.Active = true
+ExHub.AnimFrame1_5.AnchorPoint = Vector2.new(0, 1)
+ExHub.AnimFrame1_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.AnimFrame1_5.BackgroundTransparency = 1.000
+ExHub.AnimFrame1_5.BorderSizePixel = 0
+ExHub.AnimFrame1_5.Position = UDim2.new(0, 0, 1, 0)
+ExHub.AnimFrame1_5.Size = UDim2.new(1, 0, 1, -55)
+ExHub.AnimFrame1_5.CanvasSize = UDim2.new(0, 0, 0, 0)
+
+ExHub.UIGridLayout_4.Parent = ExHub.AnimFrame1_5
+ExHub.UIGridLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+ExHub.UIGridLayout_4.CellPadding = UDim2.new(0, 10, 0, 10)
+
+ExHub.UIPadding_4.Parent = ExHub.AnimFrame1_5
+ExHub.UIPadding_4.PaddingBottom = UDim.new(0, 20)
+ExHub.UIPadding_4.PaddingLeft = UDim.new(0, 15)
+ExHub.UIPadding_4.PaddingRight = UDim.new(0, 15)
+
+ExHub.ADD.Name = "ADD"
+ExHub.ADD.Parent = ExHub.AnimFrame1_5
+ExHub.ADD.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.ADD.BackgroundTransparency = 1.000
+ExHub.ADD.BorderSizePixel = 0
+ExHub.ADD.LayoutOrder = 1
+ExHub.ADD.Position = UDim2.new(-0.765458405, 0, 0.0249110311, 0)
+ExHub.ADD.Size = UDim2.new(0, 100, 0, 100)
+
+ExHub.Frame_13.Name = "Frame"
+ExHub.Frame_13.Parent = ExHub.ADD
+ExHub.Frame_13.AnchorPoint = Vector2.new(0.5, 0.5)
+ExHub.Frame_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.Frame_13.BackgroundTransparency = 1.000
+ExHub.Frame_13.ClipsDescendants = true
+ExHub.Frame_13.Position = UDim2.new(0.5, 0, 0.5, 0)
+ExHub.Frame_13.Size = UDim2.new(1, 0, 1, 0)
+ExHub.Frame_13.Image = "rbxassetid://3570695787"
+ExHub.Frame_13.ImageColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.Frame_13.ScaleType = Enum.ScaleType.Slice
+ExHub.Frame_13.SliceCenter = Rect.new(100, 100, 100, 100)
+ExHub.Frame_13.SliceScale = 0.040
+
+ExHub.GameName.Name = "GameName"
+ExHub.GameName.Parent = ExHub.Frame_13
+ExHub.GameName.AnchorPoint = Vector2.new(0.5, 0)
+ExHub.GameName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.GameName.BackgroundTransparency = 1.000
+ExHub.GameName.Position = UDim2.new(0.5, 0, 0.666999996, 0)
+ExHub.GameName.Size = UDim2.new(0, 75, 0, 31)
+ExHub.GameName.Font = Enum.Font.SourceSans
+ExHub.GameName.Text = "Add"
+ExHub.GameName.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.GameName.TextSize = 13.000
+ExHub.GameName.TextWrapped = true
+
+	ExHub.ImageLabel_5.Parent = ExHub.Frame_13
+ExHub.ImageLabel_5.AnchorPoint = Vector2.new(0.5, 0)
+ExHub.ImageLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.ImageLabel_5.BackgroundTransparency = 1.000
+ExHub.ImageLabel_5.Position = UDim2.new(0.5, 0, 0.100000001, 0)
+ExHub.ImageLabel_5.Size = UDim2.new(0, 72, 0, 54)
+ExHub.ImageLabel_5.Image = "http://www.roblox.com/asset/?id=4873174937"
+ExHub.ImageLabel_5.ImageRectOffset = Vector2.new(9, 8)
+ExHub.ImageLabel_5.ImageRectSize = Vector2.new(60, 60)
+ExHub.ImageLabel_5.ScaleType = Enum.ScaleType.Fit
+
+ExHub.Trigger.Name = "Trigger"
+ExHub.Trigger.Parent = ExHub.Frame_13
+ExHub.Trigger.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.Trigger.BackgroundTransparency = 1.000
+ExHub.Trigger.Size = UDim2.new(1, 0, 1, 0)
+ExHub.Trigger.Font = Enum.Font.SourceSans
+ExHub.Trigger.Text = ""
+ExHub.Trigger.TextColor3 = Color3.fromRGB(0, 0, 0)
+ExHub.Trigger.TextSize = 14.000
+ExHub.Trigger.TextTransparency = 1.000
+
+ExHub.REMOVE.Name = "REMOVE"
+ExHub.REMOVE.Parent = ExHub.AnimFrame1_5
+ExHub.REMOVE.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.REMOVE.BackgroundTransparency = 1.000
+ExHub.REMOVE.BorderSizePixel = 0
+ExHub.REMOVE.LayoutOrder = 1
+ExHub.REMOVE.Position = UDim2.new(-0.765458405, 0, 0.0249110311, 0)
+ExHub.REMOVE.Size = UDim2.new(0, 100, 0, 100)
+
+ExHub.Frame_14.Name = "Frame"
+ExHub.Frame_14.Parent = ExHub.REMOVE
+ExHub.Frame_14.AnchorPoint = Vector2.new(0.5, 0.5)
+ExHub.Frame_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.Frame_14.BackgroundTransparency = 1.000
+ExHub.Frame_14.ClipsDescendants = true
+ExHub.Frame_14.Position = UDim2.new(0.5, 0, 0.5, 0)
+ExHub.Frame_14.Size = UDim2.new(1, 0, 1, 0)
+ExHub.Frame_14.Image = "rbxassetid://3570695787"
+ExHub.Frame_14.ImageColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.Frame_14.ScaleType = Enum.ScaleType.Slice
+ExHub.Frame_14.SliceCenter = Rect.new(100, 100, 100, 100)
+ExHub.Frame_14.SliceScale = 0.040
+
+ExHub.GameName_2.Name = "GameName"
+ExHub.GameName_2.Parent = ExHub.Frame_14
+ExHub.GameName_2.AnchorPoint = Vector2.new(0.5, 0)
+ExHub.GameName_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.GameName_2.BackgroundTransparency = 1.000
+ExHub.GameName_2.Position = UDim2.new(0.5, 0, 0.666999996, 0)
+ExHub.GameName_2.Size = UDim2.new(0, 75, 0, 31)
+ExHub.GameName_2.Font = Enum.Font.SourceSans
+ExHub.GameName_2.Text = "Remove"
+ExHub.GameName_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.GameName_2.TextSize = 13.000
+ExHub.GameName_2.TextWrapped = true
+
+ExHub.ImageLabel_6.Parent = ExHub.Frame_14
+ExHub.ImageLabel_6.AnchorPoint = Vector2.new(0.5, 0)
+ExHub.ImageLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.ImageLabel_6.BackgroundTransparency = 1.000
+ExHub.ImageLabel_6.Position = UDim2.new(0.5, 0, 0.100000001, 0)
+ExHub.ImageLabel_6.Size = UDim2.new(0, 72, 0, 54)
+ExHub.ImageLabel_6.Image = "http://www.roblox.com/asset/?id=4873174703"
+ExHub.ImageLabel_6.ImageRectOffset = Vector2.new(12, 12)
+ExHub.ImageLabel_6.ImageRectSize = Vector2.new(55, 50)
+ExHub.ImageLabel_6.ScaleType = Enum.ScaleType.Fit
+
+ExHub.Trigger_2.Name = "Trigger"
+ExHub.Trigger_2.Parent = ExHub.Frame_14
+ExHub.Trigger_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.Trigger_2.BackgroundTransparency = 1.000
+ExHub.Trigger_2.Size = UDim2.new(1, 0, 1, 0)
+ExHub.Trigger_2.Font = Enum.Font.SourceSans
+ExHub.Trigger_2.Text = ""
+ExHub.Trigger_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ExHub.Trigger_2.TextSize = 14.000
+ExHub.Trigger_2.TextTransparency = 1.000
+
+ExHub.SearchFrame_3.Name = "SearchFrame"
+ExHub.SearchFrame_3.Parent = ExHub.LocalLibFrame
+ExHub.SearchFrame_3.AnchorPoint = Vector2.new(0.5, 0.5)
+ExHub.SearchFrame_3.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.SearchFrame_3.Position = UDim2.new(0.489339024, 0, 0, 26)
+ExHub.SearchFrame_3.Size = UDim2.new(0, 430, 0, 34)
+
+ExHub.ImageButton_3.Parent = ExHub.SearchFrame_3
+ExHub.ImageButton_3.AnchorPoint = Vector2.new(0, 0.5)
+ExHub.ImageButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.ImageButton_3.BackgroundTransparency = 1.000
+ExHub.ImageButton_3.BorderSizePixel = 0
+ExHub.ImageButton_3.ClipsDescendants = true
+ExHub.ImageButton_3.Position = UDim2.new(0.0240000002, 0, 0.5, 0)
+ExHub.ImageButton_3.Size = UDim2.new(0, 22, 0, 22)
+ExHub.ImageButton_3.Image = "http://www.roblox.com/asset/?id=3192528333"
+ExHub.ImageButton_3.ImageColor3 = Color3.fromRGB(35, 47, 62)
+
+ExHub.SearchBar_3.Name = "SearchBar"
+ExHub.SearchBar_3.Parent = ExHub.SearchFrame_3
+ExHub.SearchBar_3.AnchorPoint = Vector2.new(0, 0.5)
+ExHub.SearchBar_3.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.SearchBar_3.BorderColor3 = Color3.fromRGB(28, 41, 56)
+ExHub.SearchBar_3.BorderSizePixel = 0
+ExHub.SearchBar_3.Position = UDim2.new(0.116999999, 0, 0.5, 0)
+ExHub.SearchBar_3.Size = UDim2.new(0, 364, 0, 22)
+ExHub.SearchBar_3.Font = Enum.Font.SourceSans
+ExHub.SearchBar_3.PlaceholderText = "Click to search..."
+ExHub.SearchBar_3.Text = ""
+ExHub.SearchBar_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.SearchBar_3.TextSize = 14.000
+ExHub.SearchBar_3.TextWrapped = true
+ExHub.SearchBar_3.TextXAlignment = Enum.TextXAlignment.Left
+
+ExHub.UICorner_22.CornerRadius = UDim.new(0, 4)
+ExHub.UICorner_22.Parent = ExHub.SearchFrame_3
+
+ExHub.ExclusivesV2Frame.Name = "ExclusivesV2Frame"
+ExHub.ExclusivesV2Frame.Parent = ExHub.MainFrame
+ExHub.ExclusivesV2Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.ExclusivesV2Frame.BackgroundTransparency = 1.000
+ExHub.ExclusivesV2Frame.Position = UDim2.new(0, 0, 0, 34)
+ExHub.ExclusivesV2Frame.Size = UDim2.new(1, 0, 0, 281)
+ExHub.ExclusivesV2Frame.Visible = false
+
+ExHub.SearchFrame_4.Name = "SearchFrame"
+ExHub.SearchFrame_4.Parent = ExHub.ExclusivesV2Frame
+ExHub.SearchFrame_4.AnchorPoint = Vector2.new(0.5, 0.5)
+ExHub.SearchFrame_4.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.SearchFrame_4.Position = UDim2.new(0.489339024, 0, 0, 26)
+ExHub.SearchFrame_4.Size = UDim2.new(0, 430, 0, 34)
+
+ExHub.ImageButton_4.Parent = ExHub.SearchFrame_4
+ExHub.ImageButton_4.AnchorPoint = Vector2.new(0, 0.5)
+ExHub.ImageButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.ImageButton_4.BackgroundTransparency = 1.000
+ExHub.ImageButton_4.BorderSizePixel = 0
+ExHub.ImageButton_4.ClipsDescendants = true
+ExHub.ImageButton_4.Position = UDim2.new(0.0240000002, 0, 0.5, 0)
+ExHub.ImageButton_4.Size = UDim2.new(0, 22, 0, 22)
+ExHub.ImageButton_4.Image = "http://www.roblox.com/asset/?id=3192528333"
+ExHub.ImageButton_4.ImageColor3 = Color3.fromRGB(35, 47, 62)
+
+ExHub.SearchBar_4.Name = "SearchBar"
+ExHub.SearchBar_4.Parent = ExHub.SearchFrame_4
+ExHub.SearchBar_4.AnchorPoint = Vector2.new(0, 0.5)
+ExHub.SearchBar_4.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.SearchBar_4.BorderColor3 = Color3.fromRGB(28, 41, 56)
+ExHub.SearchBar_4.BorderSizePixel = 0
+ExHub.SearchBar_4.Position = UDim2.new(0.116999999, 0, 0.5, 0)
+ExHub.SearchBar_4.Size = UDim2.new(0, 364, 0, 22)
+ExHub.SearchBar_4.Font = Enum.Font.SourceSans
+ExHub.SearchBar_4.PlaceholderText = "Click to search..."
+ExHub.SearchBar_4.Text = ""
+ExHub.SearchBar_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.SearchBar_4.TextSize = 14.000
+ExHub.SearchBar_4.TextWrapped = true
+ExHub.SearchBar_4.TextXAlignment = Enum.TextXAlignment.Left
+
+ExHub.UICorner_23.CornerRadius = UDim.new(0, 4)
+ExHub.UICorner_23.Parent = ExHub.SearchFrame_4
+
+ExHub.AnimFrame1_6.Name = "AnimFrame1"
+ExHub.AnimFrame1_6.Parent = ExHub.ExclusivesV2Frame
+ExHub.AnimFrame1_6.Active = true
+ExHub.AnimFrame1_6.AnchorPoint = Vector2.new(0, 1)
+ExHub.AnimFrame1_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.AnimFrame1_6.BackgroundTransparency = 1.000
+ExHub.AnimFrame1_6.BorderSizePixel = 0
+ExHub.AnimFrame1_6.Position = UDim2.new(0, 0, 1, 0)
+ExHub.AnimFrame1_6.Size = UDim2.new(1, 0, 1, -55)
+ExHub.AnimFrame1_6.CanvasSize = UDim2.new(0, 0, 0, 0)
+
+ExHub.UIGridLayout_5.Parent = ExHub.AnimFrame1_6
+ExHub.UIGridLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+ExHub.UIGridLayout_5.CellPadding = UDim2.new(0, 10, 0, 10)
+
+ExHub.UIPadding_5.Parent = ExHub.AnimFrame1_6
+ExHub.UIPadding_5.PaddingBottom = UDim.new(0, 20)
+ExHub.UIPadding_5.PaddingLeft = UDim.new(0, 15)
+ExHub.UIPadding_5.PaddingRight = UDim.new(0, 15)
+
+ExHub.ADDFrame.Name = "ADDFrame"
+ExHub.ADDFrame.Parent = ExHub.MainFrame
+ExHub.ADDFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.ADDFrame.BackgroundTransparency = 1.000
+ExHub.ADDFrame.Position = UDim2.new(0, 0, 0, 34)
+ExHub.ADDFrame.Size = UDim2.new(1, 0, 0, 281)
+ExHub.ADDFrame.Visible = false
+
+ExHub.AnimFrame1_7.Name = "AnimFrame1"
+ExHub.AnimFrame1_7.Parent = ExHub.ADDFrame
+ExHub.AnimFrame1_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.AnimFrame1_7.BackgroundTransparency = 1.000
+ExHub.AnimFrame1_7.Size = UDim2.new(1, 0, 1, 0)
+
+ExHub.Namer.Name = "Namer"
+ExHub.Namer.Parent = ExHub.AnimFrame1_7
+ExHub.Namer.AnchorPoint = Vector2.new(0.5, 0)
+ExHub.Namer.BackgroundColor3 = Color3.fromRGB(28, 41, 56)
+ExHub.Namer.BorderSizePixel = 0
+ExHub.Namer.Position = UDim2.new(0.5, 0, 0, 14)
+ExHub.Namer.Size = UDim2.new(1, -50, 0, 35)
+
+ExHub.ScriptNamer.Name = "ScriptNamer"
+ExHub.ScriptNamer.Parent = ExHub.Namer
+ExHub.ScriptNamer.AnchorPoint = Vector2.new(0, 0.5)
+ExHub.ScriptNamer.BackgroundColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.ScriptNamer.BackgroundTransparency = 1.000
+ExHub.ScriptNamer.BorderColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.ScriptNamer.BorderSizePixel = 0
+ExHub.ScriptNamer.Position = UDim2.new(0, 16, 0, 17)
+ExHub.ScriptNamer.Size = UDim2.new(1, -25, 1, -12)
+ExHub.ScriptNamer.ZIndex = 2
+ExHub.ScriptNamer.ClearTextOnFocus = false
+ExHub.ScriptNamer.Font = Enum.Font.Code
+ExHub.ScriptNamer.PlaceholderColor3 = Color3.fromRGB(204, 204, 204)
+ExHub.ScriptNamer.PlaceholderText = "Script Name"
+ExHub.ScriptNamer.Text = ""
+ExHub.ScriptNamer.TextColor3 = Color3.fromRGB(204, 204, 204)
+ExHub.ScriptNamer.TextSize = 15.000
+ExHub.ScriptNamer.TextWrapped = true
+ExHub.ScriptNamer.TextXAlignment = Enum.TextXAlignment.Left
+
+ExHub.Frame_15.Parent = ExHub.Namer
+ExHub.Frame_15.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.Frame_15.Size = UDim2.new(0, 2, 1, 0)
+ExHub.Frame_15.ZIndex = 4
+
+ExHub.UICorner_24.Parent = ExHub.Frame_15
+
+ExHub.BackButton.Name = "BackButton"
+ExHub.BackButton.Parent = ExHub.AnimFrame1_7
+ExHub.BackButton.BackgroundColor3 = Color3.fromRGB(28, 41, 56)
+ExHub.BackButton.BorderSizePixel = 0
+ExHub.BackButton.LayoutOrder = 6
+ExHub.BackButton.Position = UDim2.new(0, 275, 0, 228)
+ExHub.BackButton.Size = UDim2.new(0, 120, 0, 31)
+ExHub.BackButton.ZIndex = 3
+ExHub.BackButton.Font = Enum.Font.SourceSans
+ExHub.BackButton.Text = "Back"
+ExHub.BackButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.BackButton.TextSize = 14.000
+
+ExHub.UICorner_25.CornerRadius = UDim.new(0, 3)
+ExHub.UICorner_25.Parent = ExHub.BackButton
+
+ExHub.Frame_16.Parent = ExHub.BackButton
+ExHub.Frame_16.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.Frame_16.Size = UDim2.new(0, 2, 1, 0)
+ExHub.Frame_16.ZIndex = 4
+
+ExHub.UICorner_26.Parent = ExHub.Frame_16
+
+ExHub.CreateButton.Name = "CreateButton"
+ExHub.CreateButton.Parent = ExHub.AnimFrame1_7
+ExHub.CreateButton.BackgroundColor3 = Color3.fromRGB(28, 41, 56)
+ExHub.CreateButton.BorderSizePixel = 0
+ExHub.CreateButton.LayoutOrder = 6
+ExHub.CreateButton.Position = UDim2.new(0, 25, 0, 228)
+ExHub.CreateButton.Size = UDim2.new(0, 120, 0, 31)
+ExHub.CreateButton.ZIndex = 3
+ExHub.CreateButton.Font = Enum.Font.SourceSans
+ExHub.CreateButton.Text = "Create Script"
+ExHub.CreateButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.CreateButton.TextSize = 14.000
+
+ExHub.UICorner_27.CornerRadius = UDim.new(0, 3)
+ExHub.UICorner_27.Parent = ExHub.CreateButton
+
+ExHub.Frame_17.Parent = ExHub.CreateButton
+ExHub.Frame_17.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.Frame_17.Size = UDim2.new(0, 2, 1, 0)
+ExHub.Frame_17.ZIndex = 4
+
+ExHub.UICorner_28.Parent = ExHub.Frame_17
+
+ExHub.TestExecButton.Name = "TestExecButton"
+ExHub.TestExecButton.Parent = ExHub.AnimFrame1_7
+ExHub.TestExecButton.BackgroundColor3 = Color3.fromRGB(28, 41, 56)
+ExHub.TestExecButton.BorderSizePixel = 0
+ExHub.TestExecButton.LayoutOrder = 6
+ExHub.TestExecButton.Position = UDim2.new(0, 150, 0, 228)
+ExHub.TestExecButton.Size = UDim2.new(0, 120, 0, 31)
+ExHub.TestExecButton.ZIndex = 3
+ExHub.TestExecButton.Font = Enum.Font.SourceSans
+ExHub.TestExecButton.Text = "Test Execute"
+ExHub.TestExecButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.TestExecButton.TextSize = 14.000
+
+ExHub.UICorner_29.CornerRadius = UDim.new(0, 3)
+ExHub.UICorner_29.Parent = ExHub.TestExecButton
+
+ExHub.Frame_18.Parent = ExHub.TestExecButton
+ExHub.Frame_18.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.Frame_18.Size = UDim2.new(0, 2, 1, 0)
+ExHub.Frame_18.ZIndex = 4
+
+ExHub.UICorner_30.Parent = ExHub.Frame_18
+
+ExHub.Editor.Name = "Editor"
+ExHub.Editor.Parent = ExHub.AnimFrame1_7
+ExHub.Editor.Active = true
+ExHub.Editor.AnchorPoint = Vector2.new(0.5, 0.5)
+ExHub.Editor.BackgroundColor3 = Color3.fromRGB(28, 41, 56)
+ExHub.Editor.BorderSizePixel = 0
+ExHub.Editor.Position = UDim2.new(0.5, 0, 0.5, -2)
+ExHub.Editor.Size = UDim2.new(1, -50, 0, 169)
+ExHub.Editor.CanvasSize = UDim2.new(0, 0, 0, 0)
+ExHub.Editor.ScrollBarThickness = 8
+
+ExHub.Frame_19.Parent = ExHub.Editor
+ExHub.Frame_19.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.Frame_19.Size = UDim2.new(0, 2, 1, 0)
+ExHub.Frame_19.ZIndex = 4
+
+ExHub.UICorner_31.Parent = ExHub.Frame_19
+
+ExHub.EditorFrame.Name = "EditorFrame"
+ExHub.EditorFrame.Parent = ExHub.Editor
+ExHub.EditorFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+ExHub.EditorFrame.BackgroundColor3 = Color3.fromRGB(28, 41, 56)
+ExHub.EditorFrame.BorderColor3 = Color3.fromRGB(35, 47, 62)
+ExHub.EditorFrame.BorderSizePixel = 0
+ExHub.EditorFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+ExHub.EditorFrame.Size = UDim2.new(1, -12, 1, -12)
+ExHub.EditorFrame.ZIndex = 3
+ExHub.EditorFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
+ExHub.EditorFrame.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+ExHub.EditorFrame.ScrollBarThickness = 5
+
+ExHub.Source.Name = "Source"
+ExHub.Source.Parent = ExHub.EditorFrame
+ExHub.Source.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.Source.BackgroundTransparency = 1.000
+ExHub.Source.ClipsDescendants = true
+ExHub.Source.Position = UDim2.new(0, 30, 0, 0)
+ExHub.Source.Size = UDim2.new(0, 390, 1, 0)
+ExHub.Source.ZIndex = 3
+ExHub.Source.ClearTextOnFocus = false
+ExHub.Source.Font = Enum.Font.Code
+ExHub.Source.MultiLine = true
+ExHub.Source.PlaceholderColor3 = Color3.fromRGB(204, 204, 204)
+ExHub.Source.Text = "-- Insert script source here"
+ExHub.Source.TextColor3 = Color3.fromRGB(204, 204, 204)
+ExHub.Source.TextSize = 15.000
+ExHub.Source.TextXAlignment = Enum.TextXAlignment.Left
+ExHub.Source.TextYAlignment = Enum.TextYAlignment.Top
+
+ExHub.Comments_.Name = "Comments_"
+ExHub.Comments_.Parent = ExHub.Source
+ExHub.Comments_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.Comments_.BackgroundTransparency = 1.000
+ExHub.Comments_.Size = UDim2.new(1, 0, 1, 0)
+ExHub.Comments_.ZIndex = 5
+ExHub.Comments_.Font = Enum.Font.Code
+ExHub.Comments_.Text = ""
+ExHub.Comments_.TextColor3 = Color3.fromRGB(59, 200, 59)
+ExHub.Comments_.TextSize = 15.000
+ExHub.Comments_.TextXAlignment = Enum.TextXAlignment.Left
+ExHub.Comments_.TextYAlignment = Enum.TextYAlignment.Top
+
+ExHub.Globals_.Name = "Globals_"
+ExHub.Globals_.Parent = ExHub.Source
+ExHub.Globals_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.Globals_.BackgroundTransparency = 1.000
+ExHub.Globals_.Size = UDim2.new(1, 0, 1, 0)
+ExHub.Globals_.ZIndex = 5
+ExHub.Globals_.Font = Enum.Font.Code
+ExHub.Globals_.Text = ""
+ExHub.Globals_.TextColor3 = Color3.fromRGB(59, 200, 59)
+ExHub.Globals_.TextSize = 15.000
+ExHub.Globals_.TextXAlignment = Enum.TextXAlignment.Left
+ExHub.Globals_.TextYAlignment = Enum.TextYAlignment.Top
+
+ExHub.Strings_.Name = "Strings_"
+ExHub.Strings_.Parent = ExHub.Source
+ExHub.Strings_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.Strings_.BackgroundTransparency = 1.000
+ExHub.Strings_.Size = UDim2.new(1, 0, 1, 0)
+ExHub.Strings_.ZIndex = 5
+ExHub.Strings_.Font = Enum.Font.Code
+ExHub.Strings_.Text = ""
+ExHub.Strings_.TextColor3 = Color3.fromRGB(173, 241, 149)
+ExHub.Strings_.TextSize = 15.000
+ExHub.Strings_.TextXAlignment = Enum.TextXAlignment.Left
+ExHub.Strings_.TextYAlignment = Enum.TextYAlignment.Top
+
+ExHub.Tokens_.Name = "Tokens_"
+ExHub.Tokens_.Parent = ExHub.Source
+ExHub.Tokens_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.Tokens_.BackgroundTransparency = 1.000
+ExHub.Tokens_.Size = UDim2.new(1, 0, 1, 0)
+ExHub.Tokens_.ZIndex = 5
+ExHub.Tokens_.Font = Enum.Font.Code
+ExHub.Tokens_.Text = ""
+ExHub.Tokens_.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.Tokens_.TextSize = 15.000
+ExHub.Tokens_.TextXAlignment = Enum.TextXAlignment.Left
+ExHub.Tokens_.TextYAlignment = Enum.TextYAlignment.Top
+
+ExHub.Numbers_.Name = "Numbers_"
+ExHub.Numbers_.Parent = ExHub.Source
+ExHub.Numbers_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.Numbers_.BackgroundTransparency = 1.000
+ExHub.Numbers_.Size = UDim2.new(1, 0, 1, 0)
+ExHub.Numbers_.ZIndex = 4
+ExHub.Numbers_.Font = Enum.Font.Code
+ExHub.Numbers_.Text = ""
+ExHub.Numbers_.TextColor3 = Color3.fromRGB(255, 198, 0)
+ExHub.Numbers_.TextSize = 15.000
+ExHub.Numbers_.TextXAlignment = Enum.TextXAlignment.Left
+ExHub.Numbers_.TextYAlignment = Enum.TextYAlignment.Top
+
+ExHub.Lines.Name = "Lines"
+ExHub.Lines.Parent = ExHub.EditorFrame
+ExHub.Lines.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.Lines.BackgroundTransparency = 1.000
+ExHub.Lines.Size = UDim2.new(0, 30, 1, 0)
+ExHub.Lines.ZIndex = 4
+ExHub.Lines.Font = Enum.Font.Code
+ExHub.Lines.Text = "1"
+ExHub.Lines.TextColor3 = Color3.fromRGB(204, 204, 204)
+ExHub.Lines.TextSize = 15.000
+ExHub.Lines.TextWrapped = true
+ExHub.Lines.TextYAlignment = Enum.TextYAlignment.Top
+
+ExHub.REMOVEFrame.Name = "REMOVEFrame"
+ExHub.REMOVEFrame.Parent = ExHub.MainFrame
+ExHub.REMOVEFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.REMOVEFrame.BackgroundTransparency = 1.000
+ExHub.REMOVEFrame.Position = UDim2.new(0, 0, 0, 34)
+ExHub.REMOVEFrame.Size = UDim2.new(1, 0, 0, 281)
+ExHub.REMOVEFrame.Visible = false
+
+ExHub.AnimFrame1_8.Name = "AnimFrame1"
+ExHub.AnimFrame1_8.Parent = ExHub.REMOVEFrame
+ExHub.AnimFrame1_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.AnimFrame1_8.BackgroundTransparency = 1.000
+ExHub.AnimFrame1_8.Size = UDim2.new(1, 0, 1, 0)
+
+ExHub.Frame_20.Parent = ExHub.AnimFrame1_8
+ExHub.Frame_20.AnchorPoint = Vector2.new(0.5, 0.5)
+ExHub.Frame_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.Frame_20.BackgroundTransparency = 1.000
+ExHub.Frame_20.Position = UDim2.new(0.504808128, 0, 0.5, 0)
+ExHub.Frame_20.Size = UDim2.new(0, 463, 0, 273)
+
+ExHub.RemoveButton.Name = "RemoveButton"
+ExHub.RemoveButton.Parent = ExHub.Frame_20
+ExHub.RemoveButton.AnchorPoint = Vector2.new(0, 1)
+ExHub.RemoveButton.BackgroundColor3 = Color3.fromRGB(28, 41, 56)
+ExHub.RemoveButton.BorderSizePixel = 0
+ExHub.RemoveButton.LayoutOrder = 6
+ExHub.RemoveButton.Position = UDim2.new(0, 30, 1, -25)
+ExHub.RemoveButton.Size = UDim2.new(0, 120, 0, 31)
+ExHub.RemoveButton.ZIndex = 3
+ExHub.RemoveButton.Font = Enum.Font.SourceSans
+ExHub.RemoveButton.Text = "Remove Script"
+ExHub.RemoveButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.RemoveButton.TextSize = 14.000
+
+ExHub.UICorner_32.CornerRadius = UDim.new(0, 3)
+ExHub.UICorner_32.Parent = ExHub.RemoveButton
+
+ExHub.Frame_21.Parent = ExHub.RemoveButton
+ExHub.Frame_21.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.Frame_21.Size = UDim2.new(0, 2, 1, 0)
+ExHub.Frame_21.ZIndex = 4
+
+ExHub.UICorner_33.Parent = ExHub.Frame_21
+
+ExHub.BackButton_2.Name = "BackButton"
+ExHub.BackButton_2.Parent = ExHub.Frame_20
+ExHub.BackButton_2.AnchorPoint = Vector2.new(1, 1)
+ExHub.BackButton_2.BackgroundColor3 = Color3.fromRGB(28, 41, 56)
+ExHub.BackButton_2.BorderSizePixel = 0
+ExHub.BackButton_2.LayoutOrder = 6
+ExHub.BackButton_2.Position = UDim2.new(0.68900001, -40, 1, -25)
+ExHub.BackButton_2.Size = UDim2.new(0, 120, 0, 31)
+ExHub.BackButton_2.ZIndex = 3
+ExHub.BackButton_2.Font = Enum.Font.SourceSans
+ExHub.BackButton_2.Text = "Back"
+ExHub.BackButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExHub.BackButton_2.TextSize = 14.000
+
+ExHub.UICorner_34.CornerRadius = UDim.new(0, 3)
+ExHub.UICorner_34.Parent = ExHub.BackButton_2
+
+ExHub.Frame_22.Parent = ExHub.BackButton_2
+ExHub.Frame_22.BackgroundColor3 = Color3.fromRGB(18, 98, 159)
+ExHub.Frame_22.Size = UDim2.new(0, 2, 1, 0)
+ExHub.Frame_22.ZIndex = 4
+
+ExHub.UICorner_35.Parent = ExHub.Frame_22
+
+ExHub.ScrollingFrame.Parent = ExHub.Frame_20
+ExHub.ScrollingFrame.Active = true
+ExHub.ScrollingFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+ExHub.ScrollingFrame.BackgroundColor3 = Color3.fromRGB(28, 41, 56)
+ExHub.ScrollingFrame.BorderSizePixel = 0
+ExHub.ScrollingFrame.Position = UDim2.new(0.5, 0, 0, 112)
+ExHub.ScrollingFrame.Size = UDim2.new(1, -60, 0, 200)
+ExHub.ScrollingFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
+
+ExHub.UIGridLayout_6.Parent = ExHub.ScrollingFrame
+ExHub.UIGridLayout_6.HorizontalAlignment = Enum.HorizontalAlignment.Center
+ExHub.UIGridLayout_6.SortOrder = Enum.SortOrder.LayoutOrder
+ExHub.UIGridLayout_6.CellPadding = UDim2.new(0, 5, 0, 8)
+ExHub.UIGridLayout_6.CellSize = UDim2.new(1, -35, 0, 30)
+
+ExHub.UIPadding_6.Parent = ExHub.ScrollingFrame
+ExHub.UIPadding_6.PaddingBottom = UDim.new(0, 14)
+ExHub.UIPadding_6.PaddingTop = UDim.new(0, 14)
+
+ExHub.UICorner_36.CornerRadius = UDim.new(0, 4)
+ExHub.UICorner_36.Parent = ExHub.MainFrame
