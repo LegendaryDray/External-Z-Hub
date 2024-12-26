@@ -201,6 +201,48 @@ local ExHub = {
 -----------------------------------------------
 -- Properties
 
+local mainFrame = ExHub.MainFrame
+local dragging = false
+local dragInput
+local mousePos
+local offset
+
+local function onDragStart(input)
+    dragging = true
+    offset = input.Position - mainFrame.Position
+    dragInput = input
+end
+
+local function onDrag(input)
+    if dragging then
+        mousePos = input.Position - offset
+        local clampedX = math.clamp(mousePos.X, 0, game:GetService("Workspace").CurrentCamera.ViewportSize.X - mainFrame.Size.X.Offset)
+        local clampedY = math.clamp(mousePos.Y, 0, game:GetService("Workspace").CurrentCamera.ViewportSize.Y - mainFrame.Size.Y.Offset)
+        mainFrame.Position = UDim2.new(0, clampedX, 0, clampedY)
+    end
+end
+
+local function onDragEnd()
+    dragging = false
+end
+
+mainFrame.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        onDragStart(input)
+    end
+end)
+
+mainFrame.InputChanged:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+        onDrag(input)
+    end
+end)
+
+mainFrame.InputEnded:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        onDragEnd()
+    end
+
 	ExHub.ExHub.Name = "ExHub"
 	ExHub.ExHub.Parent = game.CoreGui
 
