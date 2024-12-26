@@ -201,8 +201,6 @@ local ExHub = {
 -----------------------------------------------
 -- Properties
 
-do
-
 	ExHub.ExHub.Name = "ExHub"
 	ExHub.ExHub.Parent = game.CoreGui
 
